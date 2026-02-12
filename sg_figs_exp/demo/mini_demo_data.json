@@ -1,0 +1,322 @@
+{
+  "datasets": [
+    {
+      "dataset": "wine",
+      "examples": [
+        {
+          "input": "{\"alcohol\": 14.23, \"malic_acid\": 1.71, \"ash\": 2.43, \"alcalinity_of_ash\": 15.6, \"magnesium\": 127.0, \"total_phenols\": 2.8, \"flavanoids\": 3.06, \"nonflavanoid_phenols\": 0.28, \"proanthocyanins\": 2.29, \"color_intensity\": 5.64, \"hue\": 1.04, \"od280/od315_of_diluted_wines\": 3.92, \"proline\": 1065.0}",
+          "output": "class_0",
+          "metadata_fold": 0,
+          "metadata_row_index": 0,
+          "predict_FIGS": "class_0",
+          "predict_RO_FIGS": "class_0",
+          "predict_SG_FIGS": "class_0",
+          "predict_GradientBoosting": "class_0"
+        },
+        {
+          "input": "{\"alcohol\": 13.24, \"malic_acid\": 2.59, \"ash\": 2.87, \"alcalinity_of_ash\": 21.0, \"magnesium\": 118.0, \"total_phenols\": 2.8, \"flavanoids\": 2.69, \"nonflavanoid_phenols\": 0.39, \"proanthocyanins\": 1.82, \"color_intensity\": 4.32, \"hue\": 1.04, \"od280/od315_of_diluted_wines\": 2.93, \"proline\": 735.0}",
+          "output": "class_0",
+          "metadata_fold": 3,
+          "metadata_row_index": 4,
+          "predict_FIGS": "class_1",
+          "predict_RO_FIGS": "class_2",
+          "predict_SG_FIGS": "class_1",
+          "predict_GradientBoosting": "class_1"
+        },
+        {
+          "input": "{\"alcohol\": 13.16, \"malic_acid\": 2.36, \"ash\": 2.67, \"alcalinity_of_ash\": 18.6, \"magnesium\": 101.0, \"total_phenols\": 2.8, \"flavanoids\": 3.24, \"nonflavanoid_phenols\": 0.3, \"proanthocyanins\": 2.81, \"color_intensity\": 5.68, \"hue\": 1.03, \"od280/od315_of_diluted_wines\": 3.17, \"proline\": 1185.0}",
+          "output": "class_0",
+          "metadata_fold": 2,
+          "metadata_row_index": 2,
+          "predict_FIGS": "class_0",
+          "predict_RO_FIGS": "class_0",
+          "predict_SG_FIGS": "class_0",
+          "predict_GradientBoosting": "class_0"
+        }
+      ]
+    },
+    {
+      "dataset": "sonar",
+      "examples": [
+        {
+          "input": "{\"attribute_1\": -0.556513, \"attribute_2\": -0.642827, \"attribute_3\": -0.238217, \"attribute_4\": -1.010262, \"attribute_5\": -1.019559, \"attribute_6\": -0.635485, \"attribute_7\": -0.261954, \"attribute_8\": -0.766347, \"attribute_9\": -0.692645, \"attribute_10\": -1.365919, \"attribute_11\": -1.177722, \"attribute_12\": -1.034968, \"attribute_13\": -1.043254, \"attribute_14\": -1.265054, \"attribute_15\": -1.465856, \"attribute_16\": -1.142602, \"attribute_17\": -0.507078, \"attribute_18\": -0.494129, \"attribute_19\": -0.70332, \"attribute_20\": -0.495177, \"attribute_21\": -0.008787, \"attribute_22\": 0.552068, \"attribute_23\": 1.095169, \"attribute_24\": 1.254485, \"attribute_25\": 1.003845, \"attribute_26\": 0.230856, \"attribute_27\": 0.517189, \"attribute_28\": 0.831195, \"attribute_29\": 0.370615, \"attribute_30\": 0.493475, \"attribute_31\": 0.367367, \"attribute_32\": 0.256011, \"attribute_33\": -0.519959, \"attribute_34\": -1.615333, \"attribute_35\": -1.424213, \"attribute_36\": -1.040087, \"attribute_37\": -0.854061, \"attribute_38\": -0.953387, \"attribute_39\": -1.290057, \"attribute_40\": -1.492478, \"attribute_41\": -1.3313, \"attribute_42\": -0.809122, \"attribute_43\": -0.626298, \"attribute_44\": -0.569113, \"attribute_45\": -1.05797, \"attribute_46\": -0.68728, \"attribute_47\": -0.412168, \"attribute_48\": -0.644392, \"attribute_49\": -1.191299, \"attribute_50\": -0.045777, \"attribute_51\": -0.356335, \"attribute_52\": -0.459919, \"attribute_53\": 1.645648, \"attribute_54\": 0.955501, \"attribute_55\": -0.125928, \"attribute_56\": -0.248437, \"attribute_57\": -0.800509, \"attribute_58\": -0.689317, \"attribute_59\": -0.379688, \"attribute_60\": -0.499551}",
+          "output": "Rock",
+          "metadata_fold": 0,
+          "metadata_row_index": 9,
+          "predict_FIGS": "Rock",
+          "predict_RO_FIGS": "Rock",
+          "predict_SG_FIGS": "Rock",
+          "predict_GradientBoosting": "Rock"
+        },
+        {
+          "input": "{\"attribute_1\": 0.703538, \"attribute_2\": 0.42163, \"attribute_3\": 1.055618, \"attribute_4\": 0.32333, \"attribute_5\": 0.777676, \"attribute_6\": 2.607217, \"attribute_7\": 1.522625, \"attribute_8\": 2.510982, \"attribute_9\": 1.318325, \"attribute_10\": 0.588706, \"attribute_11\": 1.932142, \"attribute_12\": 2.898195, \"attribute_13\": 2.976719, \"attribute_14\": 2.944515, \"attribute_15\": 2.079703, \"attribute_16\": 2.438336, \"attribute_17\": 2.220238, \"attribute_18\": 1.667619, \"attribute_19\": 1.156279, \"attribute_20\": 0.834871, \"attribute_21\": -0.341605, \"attribute_22\": -0.858218, \"attribute_23\": -1.006818, \"attribute_24\": -1.179062, \"attribute_25\": -1.434182, \"attribute_26\": -1.605136, \"attribute_27\": -1.530425, \"attribute_28\": -1.763702, \"attribute_29\": -0.833533, \"attribute_30\": -1.717061, \"attribute_31\": -0.588706, \"attribute_32\": -0.678535, \"attribute_33\": -1.06215, \"attribute_34\": -0.733178, \"attribute_35\": -1.013395, \"attribute_36\": 0.126582, \"attribute_37\": 0.082283, \"attribute_38\": -1.101179, \"attribute_39\": -0.714012, \"attribute_40\": -0.640777, \"attribute_41\": -0.71384, \"attribute_42\": -1.306977, \"attribute_43\": -0.767653, \"attribute_44\": -0.385613, \"attribute_45\": -0.893356, \"attribute_46\": -1.050261, \"attribute_47\": -0.80067, \"attribute_48\": -0.276618, \"attribute_49\": -0.307489, \"attribute_50\": -1.050756, \"attribute_51\": -0.297902, \"attribute_52\": -0.522349, \"attribute_53\": -0.256857, \"attribute_54\": -0.843151, \"attribute_55\": 0.015503, \"attribute_56\": 1.901046, \"attribute_57\": 1.070732, \"attribute_58\": -0.472406, \"attribute_59\": -0.444554, \"attribute_60\": -0.419852}",
+          "output": "Rock",
+          "metadata_fold": 2,
+          "metadata_row_index": 1,
+          "predict_FIGS": "Mine",
+          "predict_RO_FIGS": "Rock",
+          "predict_SG_FIGS": "Mine",
+          "predict_GradientBoosting": "Mine"
+        },
+        {
+          "input": "{\"attribute_1\": -0.399551, \"attribute_2\": -0.040648, \"attribute_3\": -0.026926, \"attribute_4\": -0.715105, \"attribute_5\": 0.364456, \"attribute_6\": -0.101253, \"attribute_7\": 0.521638, \"attribute_8\": 0.297843, \"attribute_9\": 1.125272, \"attribute_10\": 0.021186, \"attribute_11\": -0.567382, \"attribute_12\": -0.658541, \"attribute_13\": -0.352043, \"attribute_14\": -1.414373, \"attribute_15\": -1.240416, \"attribute_16\": -0.651413, \"attribute_17\": -0.402913, \"attribute_18\": -0.584202, \"attribute_19\": 0.011612, \"attribute_20\": -0.318092, \"attribute_21\": -0.119597, \"attribute_22\": -0.459029, \"attribute_23\": -0.858165, \"attribute_24\": -0.493225, \"attribute_25\": -0.017695, \"attribute_26\": -0.246629, \"attribute_27\": 0.033645, \"attribute_28\": 0.481687, \"attribute_29\": 0.154486, \"attribute_30\": -0.886521, \"attribute_31\": -1.75089, \"attribute_32\": -0.839777, \"attribute_33\": 0.460548, \"attribute_34\": 1.523579, \"attribute_35\": 1.783805, \"attribute_36\": 1.768039, \"attribute_37\": 1.276008, \"attribute_38\": 1.271024, \"attribute_39\": 0.848461, \"attribute_40\": -0.206511, \"attribute_41\": -1.395741, \"attribute_42\": 0.030339, \"attribute_43\": 0.259328, \"attribute_44\": 1.590771, \"attribute_45\": 0.442062, \"attribute_46\": -0.164885, \"attribute_47\": -0.200048, \"attribute_48\": 0.688588, \"attribute_49\": -0.379978, \"attribute_50\": 0.87851, \"attribute_51\": 0.595283, \"attribute_52\": -1.115432, \"attribute_53\": -0.597604, \"attribute_54\": 0.680897, \"attribute_55\": -0.295646, \"attribute_56\": 1.481635, \"attribute_57\": 1.763784, \"attribute_58\": 0.06987, \"attribute_59\": 0.171678, \"attribute_60\": -0.658947}",
+          "output": "Rock",
+          "metadata_fold": 3,
+          "metadata_row_index": 0,
+          "predict_FIGS": "Mine",
+          "predict_RO_FIGS": "Mine",
+          "predict_SG_FIGS": "Mine",
+          "predict_GradientBoosting": "Mine"
+        }
+      ]
+    },
+    {
+      "dataset": "glass",
+      "examples": [
+        {
+          "input": "{\"RI\": -0.143715, \"Na\": -0.758384, \"Mg\": 0.566677, \"Al\": -0.652289, \"Si\": 0.490551, \"K\": 0.219689, \"Ca\": -0.13168, \"Ba\": -0.352877, \"Fe\": -0.586451}",
+          "output": "build wind float",
+          "metadata_fold": 1,
+          "metadata_row_index": 0,
+          "predict_FIGS": "build wind float",
+          "predict_RO_FIGS": "build wind float",
+          "predict_SG_FIGS": "build wind float",
+          "predict_GradientBoosting": "build wind float"
+        },
+        {
+          "input": "{\"RI\": -0.143715, \"Na\": -0.242853, \"Mg\": 0.552779, \"Al\": -0.070079, \"Si\": -0.014151, \"K\": 0.142844, \"Ca\": -0.371146, \"Ba\": -0.352877, \"Fe\": -0.586451}",
+          "output": "build wind float",
+          "metadata_fold": 0,
+          "metadata_row_index": 2,
+          "predict_FIGS": "build wind non-float",
+          "predict_RO_FIGS": "build wind non-float",
+          "predict_SG_FIGS": "build wind float",
+          "predict_GradientBoosting": "vehic wind float"
+        },
+        {
+          "input": "{\"RI\": -0.599196, \"Na\": -0.807482, \"Mg\": 0.114985, \"Al\": -0.00985, \"Si\": 0.801137, \"K\": 0.112107, \"Ca\": -0.117594, \"Ba\": -0.131128, \"Fe\": 1.676673}",
+          "output": "build wind non-float",
+          "metadata_fold": 3,
+          "metadata_row_index": 5,
+          "predict_FIGS": "build wind non-float",
+          "predict_RO_FIGS": "build wind float",
+          "predict_SG_FIGS": "build wind non-float",
+          "predict_GradientBoosting": "build wind non-float"
+        }
+      ]
+    },
+    {
+      "dataset": "fold_metrics",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"wine\", \"fold\": 0, \"method\": \"FIGS\"}",
+          "output": "{\"accuracy\": 0.888889, \"auc\": 0.911286, \"n_splits\": 5, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 0.019}",
+          "predict_metric_result": "{\"accuracy\": 0.888889, \"auc\": 0.911286, \"n_splits\": 5, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 0.019}",
+          "metadata_fold": 0,
+          "metadata_method": "FIGS",
+          "metadata_dataset": "wine"
+        },
+        {
+          "input": "{\"dataset\": \"wine\", \"fold\": 0, \"method\": \"RO-FIGS\"}",
+          "output": "{\"accuracy\": 0.888889, \"auc\": 0.919151, \"n_splits\": 5, \"mean_features_per_split\": 4.0, \"split_interpretability_score\": 0.8, \"train_time_seconds\": 0.205}",
+          "predict_metric_result": "{\"accuracy\": 0.888889, \"auc\": 0.919151, \"n_splits\": 5, \"mean_features_per_split\": 4.0, \"split_interpretability_score\": 0.8, \"train_time_seconds\": 0.205}",
+          "metadata_fold": 0,
+          "metadata_method": "RO-FIGS",
+          "metadata_dataset": "wine"
+        },
+        {
+          "input": "{\"dataset\": \"wine\", \"fold\": 0, \"method\": \"SG-FIGS\"}",
+          "output": "{\"accuracy\": 0.888889, \"auc\": 0.946161, \"n_splits\": 5, \"mean_features_per_split\": 2.4, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 1.1703}",
+          "predict_metric_result": "{\"accuracy\": 0.888889, \"auc\": 0.946161, \"n_splits\": 5, \"mean_features_per_split\": 2.4, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 1.1703}",
+          "metadata_fold": 0,
+          "metadata_method": "SG-FIGS",
+          "metadata_dataset": "wine"
+        },
+        {
+          "input": "{\"dataset\": \"wine\", \"fold\": 0, \"method\": \"GradientBoosting\"}",
+          "output": "{\"accuracy\": 0.916667, \"auc\": 0.977764, \"n_splits\": 700, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": null, \"train_time_seconds\": 0.4112}",
+          "predict_metric_result": "{\"accuracy\": 0.916667, \"auc\": 0.977764, \"n_splits\": 700, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": null, \"train_time_seconds\": 0.4112}",
+          "metadata_fold": 0,
+          "metadata_method": "GradientBoosting",
+          "metadata_dataset": "wine"
+        },
+        {
+          "input": "{\"dataset\": \"sonar\", \"fold\": 0, \"method\": \"FIGS\"}",
+          "output": "{\"accuracy\": 0.833333, \"auc\": 0.822727, \"n_splits\": 10, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 0.0674}",
+          "predict_metric_result": "{\"accuracy\": 0.833333, \"auc\": 0.822727, \"n_splits\": 10, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 0.0674}",
+          "metadata_fold": 0,
+          "metadata_method": "FIGS",
+          "metadata_dataset": "sonar"
+        },
+        {
+          "input": "{\"dataset\": \"sonar\", \"fold\": 0, \"method\": \"RO-FIGS\"}",
+          "output": "{\"accuracy\": 0.642857, \"auc\": 0.707955, \"n_splits\": 10, \"mean_features_per_split\": 2.9, \"split_interpretability_score\": 0.4, \"train_time_seconds\": 0.7557}",
+          "predict_metric_result": "{\"accuracy\": 0.642857, \"auc\": 0.707955, \"n_splits\": 10, \"mean_features_per_split\": 2.9, \"split_interpretability_score\": 0.4, \"train_time_seconds\": 0.7557}",
+          "metadata_fold": 0,
+          "metadata_method": "RO-FIGS",
+          "metadata_dataset": "sonar"
+        },
+        {
+          "input": "{\"dataset\": \"sonar\", \"fold\": 0, \"method\": \"SG-FIGS\"}",
+          "output": "{\"accuracy\": 0.761905, \"auc\": 0.825, \"n_splits\": 10, \"mean_features_per_split\": 3.1, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 5.9067}",
+          "predict_metric_result": "{\"accuracy\": 0.761905, \"auc\": 0.825, \"n_splits\": 10, \"mean_features_per_split\": 3.1, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 5.9067}",
+          "metadata_fold": 0,
+          "metadata_method": "SG-FIGS",
+          "metadata_dataset": "sonar"
+        },
+        {
+          "input": "{\"dataset\": \"sonar\", \"fold\": 0, \"method\": \"GradientBoosting\"}",
+          "output": "{\"accuracy\": 0.809524, \"auc\": 0.945455, \"n_splits\": 700, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": null, \"train_time_seconds\": 0.3398}",
+          "predict_metric_result": "{\"accuracy\": 0.809524, \"auc\": 0.945455, \"n_splits\": 700, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": null, \"train_time_seconds\": 0.3398}",
+          "metadata_fold": 0,
+          "metadata_method": "GradientBoosting",
+          "metadata_dataset": "sonar"
+        },
+        {
+          "input": "{\"dataset\": \"glass\", \"fold\": 0, \"method\": \"FIGS\"}",
+          "output": "{\"accuracy\": 0.674419, \"auc\": 0.819821, \"n_splits\": 5, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 0.0173}",
+          "predict_metric_result": "{\"accuracy\": 0.674419, \"auc\": 0.819821, \"n_splits\": 5, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 0.0173}",
+          "metadata_fold": 0,
+          "metadata_method": "FIGS",
+          "metadata_dataset": "glass"
+        },
+        {
+          "input": "{\"dataset\": \"glass\", \"fold\": 0, \"method\": \"RO-FIGS\"}",
+          "output": "{\"accuracy\": 0.697674, \"auc\": 0.774484, \"n_splits\": 5, \"mean_features_per_split\": 2.0, \"split_interpretability_score\": 0.4, \"train_time_seconds\": 0.4877}",
+          "predict_metric_result": "{\"accuracy\": 0.697674, \"auc\": 0.774484, \"n_splits\": 5, \"mean_features_per_split\": 2.0, \"split_interpretability_score\": 0.4, \"train_time_seconds\": 0.4877}",
+          "metadata_fold": 0,
+          "metadata_method": "RO-FIGS",
+          "metadata_dataset": "glass"
+        },
+        {
+          "input": "{\"dataset\": \"glass\", \"fold\": 0, \"method\": \"SG-FIGS\"}",
+          "output": "{\"accuracy\": 0.697674, \"auc\": 0.823531, \"n_splits\": 5, \"mean_features_per_split\": 2.2, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 1.1589}",
+          "predict_metric_result": "{\"accuracy\": 0.697674, \"auc\": 0.823531, \"n_splits\": 5, \"mean_features_per_split\": 2.2, \"split_interpretability_score\": 1.0, \"train_time_seconds\": 1.1589}",
+          "metadata_fold": 0,
+          "metadata_method": "SG-FIGS",
+          "metadata_dataset": "glass"
+        },
+        {
+          "input": "{\"dataset\": \"glass\", \"fold\": 0, \"method\": \"GradientBoosting\"}",
+          "output": "{\"accuracy\": 0.744186, \"auc\": 0.961247, \"n_splits\": 700, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": null, \"train_time_seconds\": 0.6865}",
+          "predict_metric_result": "{\"accuracy\": 0.744186, \"auc\": 0.961247, \"n_splits\": 700, \"mean_features_per_split\": 1.0, \"split_interpretability_score\": null, \"train_time_seconds\": 0.6865}",
+          "metadata_fold": 0,
+          "metadata_method": "GradientBoosting",
+          "metadata_dataset": "glass"
+        }
+      ]
+    },
+    {
+      "dataset": "summary",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"wine\", \"method\": \"FIGS\"}",
+          "output": "{\"accuracy_mean\": 0.899206, \"accuracy_std\": 0.05214, \"auc_mean\": 0.921428, \"auc_std\": 0.045135, \"n_splits_mean\": 6.4, \"n_splits_std\": 1.96, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 0.0257}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.899206, \"accuracy_std\": 0.05214, \"auc_mean\": 0.921428, \"auc_std\": 0.045135, \"n_splits_mean\": 6.4, \"n_splits_std\": 1.96, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 0.0257}",
+          "metadata_dataset": "wine",
+          "metadata_method": "FIGS"
+        },
+        {
+          "input": "{\"dataset\": \"wine\", \"method\": \"RO-FIGS\"}",
+          "output": "{\"accuracy_mean\": 0.877143, \"accuracy_std\": 0.083121, \"auc_mean\": 0.952286, \"auc_std\": 0.033636, \"n_splits_mean\": 6.6, \"n_splits_std\": 2.06, \"mean_features_per_split_mean\": 4.0, \"interpretability_mean\": 0.66, \"interpretability_std\": 0.12, \"train_time_mean\": 0.2626}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.877143, \"accuracy_std\": 0.083121, \"auc_mean\": 0.952286, \"auc_std\": 0.033636, \"n_splits_mean\": 6.6, \"n_splits_std\": 2.06, \"mean_features_per_split_mean\": 4.0, \"interpretability_mean\": 0.66, \"interpretability_std\": 0.12, \"train_time_mean\": 0.2626}",
+          "metadata_dataset": "wine",
+          "metadata_method": "RO-FIGS"
+        },
+        {
+          "input": "{\"dataset\": \"wine\", \"method\": \"SG-FIGS\"}",
+          "output": "{\"accuracy_mean\": 0.85873, \"accuracy_std\": 0.116339, \"auc_mean\": 0.956557, \"auc_std\": 0.023667, \"n_splits_mean\": 7.0, \"n_splits_std\": 2.45, \"mean_features_per_split_mean\": 2.5, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 1.7342}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.85873, \"accuracy_std\": 0.116339, \"auc_mean\": 0.956557, \"auc_std\": 0.023667, \"n_splits_mean\": 7.0, \"n_splits_std\": 2.45, \"mean_features_per_split_mean\": 2.5, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 1.7342}",
+          "metadata_dataset": "wine",
+          "metadata_method": "SG-FIGS"
+        },
+        {
+          "input": "{\"dataset\": \"wine\", \"method\": \"GradientBoosting\"}",
+          "output": "{\"accuracy_mean\": 0.921429, \"accuracy_std\": 0.032823, \"auc_mean\": 0.991903, \"auc_std\": 0.007594, \"n_splits_mean\": 700.0, \"n_splits_std\": 0.0, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": null, \"interpretability_std\": null, \"train_time_mean\": 0.3902}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.921429, \"accuracy_std\": 0.032823, \"auc_mean\": 0.991903, \"auc_std\": 0.007594, \"n_splits_mean\": 700.0, \"n_splits_std\": 0.0, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": null, \"interpretability_std\": null, \"train_time_mean\": 0.3902}",
+          "metadata_dataset": "wine",
+          "metadata_method": "GradientBoosting"
+        },
+        {
+          "input": "{\"dataset\": \"sonar\", \"method\": \"FIGS\"}",
+          "output": "{\"accuracy_mean\": 0.768873, \"accuracy_std\": 0.038079, \"auc_mean\": 0.781568, \"auc_std\": 0.0342, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 0.0549}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.768873, \"accuracy_std\": 0.038079, \"auc_mean\": 0.781568, \"auc_std\": 0.0342, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 0.0549}",
+          "metadata_dataset": "sonar",
+          "metadata_method": "FIGS"
+        },
+        {
+          "input": "{\"dataset\": \"sonar\", \"method\": \"RO-FIGS\"}",
+          "output": "{\"accuracy_mean\": 0.740186, \"accuracy_std\": 0.075515, \"auc_mean\": 0.815577, \"auc_std\": 0.059588, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 2.033, \"interpretability_mean\": 0.6667, \"interpretability_std\": 0.1461, \"train_time_mean\": 0.8343}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.740186, \"accuracy_std\": 0.075515, \"auc_mean\": 0.815577, \"auc_std\": 0.059588, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 2.033, \"interpretability_mean\": 0.6667, \"interpretability_std\": 0.1461, \"train_time_mean\": 0.8343}",
+          "metadata_dataset": "sonar",
+          "metadata_method": "RO-FIGS"
+        },
+        {
+          "input": "{\"dataset\": \"sonar\", \"method\": \"SG-FIGS\"}",
+          "output": "{\"accuracy_mean\": 0.7741, \"accuracy_std\": 0.055334, \"auc_mean\": 0.803764, \"auc_std\": 0.057371, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 3.1, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 8.4601}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.7741, \"accuracy_std\": 0.055334, \"auc_mean\": 0.803764, \"auc_std\": 0.057371, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 3.1, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 8.4601}",
+          "metadata_dataset": "sonar",
+          "metadata_method": "SG-FIGS"
+        },
+        {
+          "input": "{\"dataset\": \"sonar\", \"method\": \"GradientBoosting\"}",
+          "output": "{\"accuracy_mean\": 0.817654, \"accuracy_std\": 0.082745, \"auc_mean\": 0.922836, \"auc_std\": 0.039302, \"n_splits_mean\": 700.0, \"n_splits_std\": 0.0, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": null, \"interpretability_std\": null, \"train_time_mean\": 0.3563}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.817654, \"accuracy_std\": 0.082745, \"auc_mean\": 0.922836, \"auc_std\": 0.039302, \"n_splits_mean\": 700.0, \"n_splits_std\": 0.0, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": null, \"interpretability_std\": null, \"train_time_mean\": 0.3563}",
+          "metadata_dataset": "sonar",
+          "metadata_method": "GradientBoosting"
+        },
+        {
+          "input": "{\"dataset\": \"glass\", \"method\": \"FIGS\"}",
+          "output": "{\"accuracy_mean\": 0.691584, \"accuracy_std\": 0.027026, \"auc_mean\": 0.813447, \"auc_std\": 0.051496, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 0.0397}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.691584, \"accuracy_std\": 0.027026, \"auc_mean\": 0.813447, \"auc_std\": 0.051496, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 0.0397}",
+          "metadata_dataset": "glass",
+          "metadata_method": "FIGS"
+        },
+        {
+          "input": "{\"dataset\": \"glass\", \"method\": \"RO-FIGS\"}",
+          "output": "{\"accuracy_mean\": 0.649723, \"accuracy_std\": 0.081121, \"auc_mean\": 0.790599, \"auc_std\": 0.031745, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 2.033, \"interpretability_mean\": 0.46, \"interpretability_std\": 0.08, \"train_time_mean\": 2.2507}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.649723, \"accuracy_std\": 0.081121, \"auc_mean\": 0.790599, \"auc_std\": 0.031745, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 2.033, \"interpretability_mean\": 0.46, \"interpretability_std\": 0.08, \"train_time_mean\": 2.2507}",
+          "metadata_dataset": "glass",
+          "metadata_method": "RO-FIGS"
+        },
+        {
+          "input": "{\"dataset\": \"glass\", \"method\": \"SG-FIGS\"}",
+          "output": "{\"accuracy_mean\": 0.649834, \"accuracy_std\": 0.085984, \"auc_mean\": 0.766441, \"auc_std\": 0.085207, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 2.387, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 6.0133}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.649834, \"accuracy_std\": 0.085984, \"auc_mean\": 0.766441, \"auc_std\": 0.085207, \"n_splits_mean\": 10.0, \"n_splits_std\": 4.47, \"mean_features_per_split_mean\": 2.387, \"interpretability_mean\": 1.0, \"interpretability_std\": 0.0, \"train_time_mean\": 6.0133}",
+          "metadata_dataset": "glass",
+          "metadata_method": "SG-FIGS"
+        },
+        {
+          "input": "{\"dataset\": \"glass\", \"method\": \"GradientBoosting\"}",
+          "output": "{\"accuracy_mean\": 0.752603, \"accuracy_std\": 0.046788, \"auc_mean\": 0.913357, \"auc_std\": 0.048269, \"n_splits_mean\": 700.0, \"n_splits_std\": 0.0, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": null, \"interpretability_std\": null, \"train_time_mean\": 0.7016}",
+          "predict_summary_result": "{\"accuracy_mean\": 0.752603, \"accuracy_std\": 0.046788, \"auc_mean\": 0.913357, \"auc_std\": 0.048269, \"n_splits_mean\": 700.0, \"n_splits_std\": 0.0, \"mean_features_per_split_mean\": 1.0, \"interpretability_mean\": null, \"interpretability_std\": null, \"train_time_mean\": 0.7016}",
+          "metadata_dataset": "glass",
+          "metadata_method": "GradientBoosting"
+        }
+      ]
+    },
+    {
+      "dataset": "synergy_graph_stats",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"wine\"}",
+          "output": "{\"n_edges\": 20, \"n_candidates\": 25, \"density\": 0.2564102564102564, \"threshold\": 0.3880796945050594, \"median_synergy\": 0.30568532970562867, \"synergy_computation_time_seconds\": 0.06}",
+          "predict_synergy_stats": "{\"n_edges\": 20, \"n_candidates\": 25, \"density\": 0.2564102564102564, \"threshold\": 0.3880796945050594, \"median_synergy\": 0.30568532970562867, \"synergy_computation_time_seconds\": 0.06}",
+          "metadata_dataset": "wine"
+        },
+        {
+          "input": "{\"dataset\": \"sonar\"}",
+          "output": "{\"n_edges\": 443, \"n_candidates\": 2074, \"density\": 0.25028248587570623, \"threshold\": 0.12376243337846819, \"median_synergy\": 0.10009671392544647, \"synergy_computation_time_seconds\": 1.17}",
+          "predict_synergy_stats": "{\"n_edges\": 443, \"n_candidates\": 2074, \"density\": 0.25028248587570623, \"threshold\": 0.12376243337846819, \"median_synergy\": 0.10009671392544647, \"synergy_computation_time_seconds\": 1.17}",
+          "metadata_dataset": "sonar"
+        },
+        {
+          "input": "{\"dataset\": \"glass\"}",
+          "output": "{\"n_edges\": 9, \"n_candidates\": 13, \"density\": 0.25, \"threshold\": 0.5043406536923758, \"median_synergy\": 0.4070084102498617, \"synergy_computation_time_seconds\": 0.03}",
+          "predict_synergy_stats": "{\"n_edges\": 9, \"n_candidates\": 13, \"density\": 0.25, \"threshold\": 0.5043406536923758, \"median_synergy\": 0.4070084102498617, \"synergy_computation_time_seconds\": 0.03}",
+          "metadata_dataset": "glass"
+        }
+      ]
+    }
+  ]
+}

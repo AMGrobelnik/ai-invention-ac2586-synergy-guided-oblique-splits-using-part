@@ -1,0 +1,246 @@
+{
+  "metrics_agg": {
+    "n_datasets": 12,
+    "n_bootstrap_comparisons": 6,
+    "n_ci_includes_zero": 0,
+    "n_ci_excludes_zero": 6,
+    "mean_figs_accuracy": 0.8117,
+    "mean_sg25_accuracy": 0.7083,
+    "mean_ro_figs_accuracy": 0.755,
+    "mean_gb_accuracy": 0.8583,
+    "oblique_activation_rate": 0.1,
+    "mean_synergy_alignment_rho": -0.1375,
+    "n_domain_meaningful_datasets": 3,
+    "n_graph_too_sparse": 4,
+    "n_oblique_incompatible": 3,
+    "n_synergy_harmful": 3,
+    "n_synergy_neutral": 2,
+    "n_synergy_beneficial": 0,
+    "total_oblique_splits": 9,
+    "total_axis_aligned_splits": 81
+  },
+  "datasets": [
+    {
+      "dataset": "bootstrap_effect_sizes",
+      "examples": [
+        {
+          "input": "{\"module\": \"A_bootstrap\", \"comparison\": \"FIGS - RO-FIGS\", \"n_datasets\": 12, \"n_bootstrap\": 10000}",
+          "output": "{\"point_estimate\": 0.056711, \"ci_lower_95\": 0.016633, \"ci_upper_95\": 0.095563, \"ci_includes_zero\": false}",
+          "metadata_module": "A_bootstrap_effect_sizes",
+          "metadata_method_a": "FIGS",
+          "metadata_method_b": "RO-FIGS",
+          "metadata_n_datasets": 12,
+          "eval_point_estimate": 0.056711,
+          "eval_ci_width": 0.07893,
+          "eval_ci_includes_zero": 0.0,
+          "predict_effect_direction": "positive"
+        },
+        {
+          "input": "{\"module\": \"A_bootstrap\", \"comparison\": \"FIGS - SG-FIGS-25\", \"n_datasets\": 12, \"n_bootstrap\": 10000}",
+          "output": "{\"point_estimate\": 0.103348, \"ci_lower_95\": 0.06332, \"ci_upper_95\": 0.142828, \"ci_includes_zero\": false}",
+          "metadata_module": "A_bootstrap_effect_sizes",
+          "metadata_method_a": "FIGS",
+          "metadata_method_b": "SG-FIGS-25",
+          "metadata_n_datasets": 12,
+          "eval_point_estimate": 0.103348,
+          "eval_ci_width": 0.079508,
+          "eval_ci_includes_zero": 0.0,
+          "predict_effect_direction": "positive"
+        },
+        {
+          "input": "{\"module\": \"A_bootstrap\", \"comparison\": \"RO-FIGS - SG-FIGS-25\", \"n_datasets\": 12, \"n_bootstrap\": 10000}",
+          "output": "{\"point_estimate\": 0.046637, \"ci_lower_95\": 0.013409, \"ci_upper_95\": 0.082852, \"ci_includes_zero\": false}",
+          "metadata_module": "A_bootstrap_effect_sizes",
+          "metadata_method_a": "RO-FIGS",
+          "metadata_method_b": "SG-FIGS-25",
+          "metadata_n_datasets": 12,
+          "eval_point_estimate": 0.046637,
+          "eval_ci_width": 0.069443,
+          "eval_ci_includes_zero": 0.0,
+          "predict_effect_direction": "positive"
+        }
+      ]
+    },
+    {
+      "dataset": "failure_taxonomy",
+      "examples": [
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"australian\"}",
+          "output": "{\"failure_mode\": \"graph_too_sparse\", \"figs_mean_acc\": 0.8507, \"ro_figs_mean_acc\": 0.7841, \"sg25_mean_acc\": 0.8304}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "australian",
+          "metadata_failure_mode": "graph_too_sparse",
+          "eval_figs_minus_ro_pp": 6.67,
+          "eval_sg25_minus_ro_pp": 4.64,
+          "eval_synergy_stability_jaccard": 0.7196,
+          "predict_failure_mode": "graph_too_sparse"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"banknote\"}",
+          "output": "{\"failure_mode\": \"graph_too_sparse\", \"figs_mean_acc\": 0.9606, \"ro_figs_mean_acc\": 0.8768, \"sg25_mean_acc\": 0.8083}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "banknote",
+          "metadata_failure_mode": "graph_too_sparse",
+          "eval_figs_minus_ro_pp": 8.38,
+          "eval_sg25_minus_ro_pp": -6.86,
+          "eval_synergy_stability_jaccard": 1.0,
+          "predict_failure_mode": "graph_too_sparse"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"breast_cancer\"}",
+          "output": "{\"failure_mode\": \"synergy_neutral\", \"figs_mean_acc\": 0.9227, \"ro_figs_mean_acc\": 0.9104, \"sg25_mean_acc\": 0.9052}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "breast_cancer",
+          "metadata_failure_mode": "synergy_neutral",
+          "eval_figs_minus_ro_pp": 1.23,
+          "eval_sg25_minus_ro_pp": -0.52,
+          "eval_synergy_stability_jaccard": 0.7065,
+          "predict_failure_mode": "synergy_neutral"
+        }
+      ]
+    },
+    {
+      "dataset": "split_catalog",
+      "examples": [
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"diabetes_SG-FIGS-10\", \"dataset\": \"diabetes\", \"method\": \"SG-FIGS-10\"}",
+          "output": "{\"features\": [\"plas\", \"mass\", \"age\"], \"abs_weights\": [0.181039, 0.097461, 0.074504], \"impurity_reduction\": 35.9642, \"rule_str\": \"-0.181*plas + -0.097*mass + -0.075*age + 0.640 <= 0.503\", \"domain_annotation\": \"glucose-BMI-age metabolic risk triad\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "diabetes_SG-FIGS-10",
+          "metadata_dataset_name": "diabetes",
+          "metadata_method": "SG-FIGS-10",
+          "metadata_n_features": 3,
+          "eval_impurity_reduction": 35.9642,
+          "eval_n_features": 3.0,
+          "predict_domain_annotation": "glucose-BMI-age metabolic risk triad"
+        },
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"diabetes_SG-FIGS-25\", \"dataset\": \"diabetes\", \"method\": \"SG-FIGS-25\"}",
+          "output": "{\"features\": [\"plas\", \"mass\", \"age\"], \"abs_weights\": [0.181039, 0.097461, 0.074504], \"impurity_reduction\": 35.9642, \"rule_str\": \"-0.181*plas + -0.097*mass + -0.075*age + 0.640 <= 0.503\", \"domain_annotation\": \"glucose-BMI-age metabolic risk triad\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "diabetes_SG-FIGS-25",
+          "metadata_dataset_name": "diabetes",
+          "metadata_method": "SG-FIGS-25",
+          "metadata_n_features": 3,
+          "eval_impurity_reduction": 35.9642,
+          "eval_n_features": 3.0,
+          "predict_domain_annotation": "glucose-BMI-age metabolic risk triad"
+        },
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"diabetes_SG-FIGS-50\", \"dataset\": \"diabetes\", \"method\": \"SG-FIGS-50\"}",
+          "output": "{\"features\": [\"preg\", \"plas\", \"mass\", \"age\"], \"abs_weights\": [0.053101, 0.18323, 0.097865, 0.043683], \"impurity_reduction\": 34.9363, \"rule_str\": \"-0.053*preg + -0.183*plas + -0.098*mass + -0.044*age + 0.639 <= 0.659\", \"domain_annotation\": \"glucose-BMI-age metabolic risk triad\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "diabetes_SG-FIGS-50",
+          "metadata_dataset_name": "diabetes",
+          "metadata_method": "SG-FIGS-50",
+          "metadata_n_features": 4,
+          "eval_impurity_reduction": 34.9363,
+          "eval_n_features": 4.0,
+          "predict_domain_annotation": "glucose-BMI-age metabolic risk triad"
+        }
+      ]
+    },
+    {
+      "dataset": "synergy_alignment",
+      "examples": [
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"diabetes_SG-FIGS-10\", \"n_features\": 3}",
+          "output": "{\"spearman_rho\": -0.5, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "diabetes_SG-FIGS-10",
+          "metadata_dataset_name": "diabetes",
+          "metadata_n_features": 3,
+          "eval_spearman_rho": -0.5,
+          "eval_spearman_p_value": 0.6667,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "negative"
+        },
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"diabetes_SG-FIGS-25\", \"n_features\": 3}",
+          "output": "{\"spearman_rho\": -0.5, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "diabetes_SG-FIGS-25",
+          "metadata_dataset_name": "diabetes",
+          "metadata_n_features": 3,
+          "eval_spearman_rho": -0.5,
+          "eval_spearman_p_value": 0.6667,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "negative"
+        },
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"diabetes_SG-FIGS-50\", \"n_features\": 4}",
+          "output": "{\"spearman_rho\": 0.0, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "diabetes_SG-FIGS-50",
+          "metadata_dataset_name": "diabetes",
+          "metadata_n_features": 4,
+          "eval_spearman_rho": 0.0,
+          "eval_spearman_p_value": 1.0,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "zero"
+        }
+      ]
+    },
+    {
+      "dataset": "success_criteria_verdicts",
+      "examples": [
+        {
+          "input": "{\"module\": \"E_success_verdicts\", \"criterion\": \"Accuracy parity with fewer splits\"}",
+          "output": "{\"verdict\": \"DISCONFIRMED\", \"evidence\": \"SG-FIGS-25 loses 10.3pp to FIGS on average (CI=[6.3, 14.3]pp). Mean oblique fraction for SG-FIGS-25: 5.4%.\"}",
+          "metadata_module": "E_success_verdicts",
+          "metadata_criterion": "Accuracy parity with fewer splits",
+          "eval_verdict_score": 0.0,
+          "predict_verdict": "DISCONFIRMED"
+        },
+        {
+          "input": "{\"module\": \"E_success_verdicts\", \"criterion\": \"Higher interpretability score\"}",
+          "output": "{\"verdict\": \"PARTIALLY_CONFIRMED\", \"evidence\": \"Oblique activation rate: 10.0% (across 90 total splits). Mean synergy alignment (Spearman \\u03c1): -0.138. Oblique splits combine synergistic features but low activation rate limits overall interpretability improvement.\"}",
+          "metadata_module": "E_success_verdicts",
+          "metadata_criterion": "Higher interpretability score",
+          "eval_verdict_score": 0.5,
+          "predict_verdict": "PARTIALLY_CONFIRMED"
+        },
+        {
+          "input": "{\"module\": \"E_success_verdicts\", \"criterion\": \"Domain-meaningful splits on 3+ datasets\"}",
+          "output": "{\"verdict\": \"CONFIRMED\", \"evidence\": \"3 datasets show domain-meaningful oblique splits: ['breast_cancer', 'diabetes', 'heart_statlog']. breast_cancer: worst_radius, worst_smoothness, and worst_concave_points capture tumor morphology \\u2014 larger, rougher tumors with more concavities are hallmarks of malignancy. diabetes: plas (plasma glucose), mass (BMI), and age form a clinically known metabolic syndrome triad for diabetes risk assessment. heart_statlog: number_of_major_vessels and thal (thalassemia type) are key cardiovascular anatomy\"}",
+          "metadata_module": "E_success_verdicts",
+          "metadata_criterion": "Domain-meaningful splits on 3+ datasets",
+          "eval_verdict_score": 1.0,
+          "predict_verdict": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "dataset": "paper_narrative",
+      "examples": [
+        {
+          "input": "{\"module\": \"F_paper_narrative\", \"finding_rank\": 1}",
+          "output": "{\"finding\": \"SG-FIGS does not improve accuracy over standard FIGS\", \"detail\": \"Bootstrap CIs show SG-FIGS-25 loses ~5-10pp vs FIGS across 12 datasets. The accuracy parity criterion is DISCONFIRMED.\"}",
+          "metadata_module": "F_paper_narrative",
+          "metadata_finding_rank": 1,
+          "eval_finding_rank": 1.0,
+          "predict_finding_category": "negative"
+        },
+        {
+          "input": "{\"module\": \"F_paper_narrative\", \"finding_rank\": 2}",
+          "output": "{\"finding\": \"Oblique splits produce domain-meaningful feature combinations\", \"detail\": \"diabetes (plas+mass+age = metabolic triad), heart (vessels+thal = cardiovascular anatomy), breast_cancer (worst_radius+smoothness+concave_points = tumor morphology) \\u2014 all clinically meaningful.\"}",
+          "metadata_module": "F_paper_narrative",
+          "metadata_finding_rank": 2,
+          "eval_finding_rank": 2.0,
+          "predict_finding_category": "positive"
+        },
+        {
+          "input": "{\"module\": \"F_paper_narrative\", \"finding_rank\": 3}",
+          "output": "{\"finding\": \"Synergy graph sparsity is the primary failure mode\", \"detail\": \"4/12 datasets have zero oblique splits at 25% threshold due to sparse synergy graphs.\"}",
+          "metadata_module": "F_paper_narrative",
+          "metadata_finding_rank": 3,
+          "eval_finding_rank": 3.0,
+          "predict_finding_category": "positive"
+        }
+      ]
+    }
+  ]
+}

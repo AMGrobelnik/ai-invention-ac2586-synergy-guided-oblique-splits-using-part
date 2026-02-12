@@ -1,0 +1,563 @@
+{
+  "metrics_agg": {
+    "n_datasets": 12,
+    "n_bootstrap_comparisons": 6,
+    "n_ci_includes_zero": 0,
+    "n_ci_excludes_zero": 6,
+    "mean_figs_accuracy": 0.8117,
+    "mean_sg25_accuracy": 0.7083,
+    "mean_ro_figs_accuracy": 0.755,
+    "mean_gb_accuracy": 0.8583,
+    "oblique_activation_rate": 0.1,
+    "mean_synergy_alignment_rho": -0.1375,
+    "n_domain_meaningful_datasets": 3,
+    "n_graph_too_sparse": 4,
+    "n_oblique_incompatible": 3,
+    "n_synergy_harmful": 3,
+    "n_synergy_neutral": 2,
+    "n_synergy_beneficial": 0,
+    "total_oblique_splits": 9,
+    "total_axis_aligned_splits": 81
+  },
+  "datasets": [
+    {
+      "dataset": "bootstrap_effect_sizes",
+      "examples": [
+        {
+          "input": "{\"module\": \"A_bootstrap\", \"comparison\": \"FIGS - RO-FIGS\", \"n_datasets\": 12, \"n_bootstrap\": 10000}",
+          "output": "{\"point_estimate\": 0.056711, \"ci_lower_95\": 0.016633, \"ci_upper_95\": 0.095563, \"ci_includes_zero\": false}",
+          "metadata_module": "A_bootstrap_effect_sizes",
+          "metadata_method_a": "FIGS",
+          "metadata_method_b": "RO-FIGS",
+          "metadata_n_datasets": 12,
+          "eval_point_estimate": 0.056711,
+          "eval_ci_width": 0.07893,
+          "eval_ci_includes_zero": 0.0,
+          "predict_effect_direction": "positive"
+        },
+        {
+          "input": "{\"module\": \"A_bootstrap\", \"comparison\": \"FIGS - SG-FIGS-25\", \"n_datasets\": 12, \"n_bootstrap\": 10000}",
+          "output": "{\"point_estimate\": 0.103348, \"ci_lower_95\": 0.06332, \"ci_upper_95\": 0.142828, \"ci_includes_zero\": false}",
+          "metadata_module": "A_bootstrap_effect_sizes",
+          "metadata_method_a": "FIGS",
+          "metadata_method_b": "SG-FIGS-25",
+          "metadata_n_datasets": 12,
+          "eval_point_estimate": 0.103348,
+          "eval_ci_width": 0.079508,
+          "eval_ci_includes_zero": 0.0,
+          "predict_effect_direction": "positive"
+        },
+        {
+          "input": "{\"module\": \"A_bootstrap\", \"comparison\": \"RO-FIGS - SG-FIGS-25\", \"n_datasets\": 12, \"n_bootstrap\": 10000}",
+          "output": "{\"point_estimate\": 0.046637, \"ci_lower_95\": 0.013409, \"ci_upper_95\": 0.082852, \"ci_includes_zero\": false}",
+          "metadata_module": "A_bootstrap_effect_sizes",
+          "metadata_method_a": "RO-FIGS",
+          "metadata_method_b": "SG-FIGS-25",
+          "metadata_n_datasets": 12,
+          "eval_point_estimate": 0.046637,
+          "eval_ci_width": 0.069443,
+          "eval_ci_includes_zero": 0.0,
+          "predict_effect_direction": "positive"
+        },
+        {
+          "input": "{\"module\": \"A_bootstrap\", \"comparison\": \"FIGS - SG-FIGS-10\", \"n_datasets\": 12, \"n_bootstrap\": 10000}",
+          "output": "{\"point_estimate\": 0.09016, \"ci_lower_95\": 0.054059, \"ci_upper_95\": 0.126213, \"ci_includes_zero\": false}",
+          "metadata_module": "A_bootstrap_effect_sizes",
+          "metadata_method_a": "FIGS",
+          "metadata_method_b": "SG-FIGS-10",
+          "metadata_n_datasets": 12,
+          "eval_point_estimate": 0.09016,
+          "eval_ci_width": 0.072154,
+          "eval_ci_includes_zero": 0.0,
+          "predict_effect_direction": "positive"
+        },
+        {
+          "input": "{\"module\": \"A_bootstrap\", \"comparison\": \"FIGS - SG-FIGS-50\", \"n_datasets\": 12, \"n_bootstrap\": 10000}",
+          "output": "{\"point_estimate\": 0.124798, \"ci_lower_95\": 0.062023, \"ci_upper_95\": 0.197283, \"ci_includes_zero\": false}",
+          "metadata_module": "A_bootstrap_effect_sizes",
+          "metadata_method_a": "FIGS",
+          "metadata_method_b": "SG-FIGS-50",
+          "metadata_n_datasets": 12,
+          "eval_point_estimate": 0.124798,
+          "eval_ci_width": 0.13526,
+          "eval_ci_includes_zero": 0.0,
+          "predict_effect_direction": "positive"
+        },
+        {
+          "input": "{\"module\": \"A_bootstrap\", \"comparison\": \"GradientBoosting - FIGS\", \"n_datasets\": 12, \"n_bootstrap\": 10000}",
+          "output": "{\"point_estimate\": 0.046592, \"ci_lower_95\": 0.035426, \"ci_upper_95\": 0.058339, \"ci_includes_zero\": false}",
+          "metadata_module": "A_bootstrap_effect_sizes",
+          "metadata_method_a": "GradientBoosting",
+          "metadata_method_b": "FIGS",
+          "metadata_n_datasets": 12,
+          "eval_point_estimate": 0.046592,
+          "eval_ci_width": 0.022913,
+          "eval_ci_includes_zero": 0.0,
+          "predict_effect_direction": "positive"
+        }
+      ]
+    },
+    {
+      "dataset": "failure_taxonomy",
+      "examples": [
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"australian\"}",
+          "output": "{\"failure_mode\": \"graph_too_sparse\", \"figs_mean_acc\": 0.8507, \"ro_figs_mean_acc\": 0.7841, \"sg25_mean_acc\": 0.8304}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "australian",
+          "metadata_failure_mode": "graph_too_sparse",
+          "eval_figs_minus_ro_pp": 6.67,
+          "eval_sg25_minus_ro_pp": 4.64,
+          "eval_synergy_stability_jaccard": 0.7196,
+          "predict_failure_mode": "graph_too_sparse"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"banknote\"}",
+          "output": "{\"failure_mode\": \"graph_too_sparse\", \"figs_mean_acc\": 0.9606, \"ro_figs_mean_acc\": 0.8768, \"sg25_mean_acc\": 0.8083}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "banknote",
+          "metadata_failure_mode": "graph_too_sparse",
+          "eval_figs_minus_ro_pp": 8.38,
+          "eval_sg25_minus_ro_pp": -6.86,
+          "eval_synergy_stability_jaccard": 1.0,
+          "predict_failure_mode": "graph_too_sparse"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"breast_cancer\"}",
+          "output": "{\"failure_mode\": \"synergy_neutral\", \"figs_mean_acc\": 0.9227, \"ro_figs_mean_acc\": 0.9104, \"sg25_mean_acc\": 0.9052}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "breast_cancer",
+          "metadata_failure_mode": "synergy_neutral",
+          "eval_figs_minus_ro_pp": 1.23,
+          "eval_sg25_minus_ro_pp": -0.52,
+          "eval_synergy_stability_jaccard": 0.7065,
+          "predict_failure_mode": "synergy_neutral"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"credit_g\"}",
+          "output": "{\"failure_mode\": \"synergy_harmful\", \"figs_mean_acc\": 0.729, \"ro_figs_mean_acc\": 0.711, \"sg25_mean_acc\": 0.656}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "credit_g",
+          "metadata_failure_mode": "synergy_harmful",
+          "eval_figs_minus_ro_pp": 1.8,
+          "eval_sg25_minus_ro_pp": -5.5,
+          "eval_synergy_stability_jaccard": 0.5991,
+          "predict_failure_mode": "synergy_harmful"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"diabetes\"}",
+          "output": "{\"failure_mode\": \"synergy_neutral\", \"figs_mean_acc\": 0.7187, \"ro_figs_mean_acc\": 0.7174, \"sg25_mean_acc\": 0.6874}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "diabetes",
+          "metadata_failure_mode": "synergy_neutral",
+          "eval_figs_minus_ro_pp": 0.13,
+          "eval_sg25_minus_ro_pp": -3.0,
+          "eval_synergy_stability_jaccard": 0.494,
+          "predict_failure_mode": "synergy_neutral"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"glass\"}",
+          "output": "{\"failure_mode\": \"graph_too_sparse\", \"figs_mean_acc\": 0.6917, \"ro_figs_mean_acc\": 0.6315, \"sg25_mean_acc\": 0.5145}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "glass",
+          "metadata_failure_mode": "graph_too_sparse",
+          "eval_figs_minus_ro_pp": 6.02,
+          "eval_sg25_minus_ro_pp": -11.69,
+          "eval_synergy_stability_jaccard": 0.5227,
+          "predict_failure_mode": "graph_too_sparse"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"heart_statlog\"}",
+          "output": "{\"failure_mode\": \"oblique_incompatible\", \"figs_mean_acc\": 0.7667, \"ro_figs_mean_acc\": 0.6963, \"sg25_mean_acc\": 0.6259}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "heart_statlog",
+          "metadata_failure_mode": "oblique_incompatible",
+          "eval_figs_minus_ro_pp": 7.04,
+          "eval_sg25_minus_ro_pp": -7.04,
+          "eval_synergy_stability_jaccard": 0.6591,
+          "predict_failure_mode": "oblique_incompatible"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"ionosphere\"}",
+          "output": "{\"failure_mode\": \"oblique_incompatible\", \"figs_mean_acc\": 0.8889, \"ro_figs_mean_acc\": 0.7472, \"sg25_mean_acc\": 0.7493}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "ionosphere",
+          "metadata_failure_mode": "oblique_incompatible",
+          "eval_figs_minus_ro_pp": 14.17,
+          "eval_sg25_minus_ro_pp": 0.21,
+          "eval_synergy_stability_jaccard": 0.3747,
+          "predict_failure_mode": "oblique_incompatible"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"segment\"}",
+          "output": "{\"failure_mode\": \"graph_too_sparse\", \"figs_mean_acc\": 0.9294, \"ro_figs_mean_acc\": 0.7805, \"sg25_mean_acc\": 0.8143}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "segment",
+          "metadata_failure_mode": "graph_too_sparse",
+          "eval_figs_minus_ro_pp": 14.89,
+          "eval_sg25_minus_ro_pp": 3.38,
+          "eval_synergy_stability_jaccard": 0.9504,
+          "predict_failure_mode": "graph_too_sparse"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"sonar\"}",
+          "output": "{\"failure_mode\": \"synergy_harmful\", \"figs_mean_acc\": 0.7448, \"ro_figs_mean_acc\": 0.7741, \"sg25_mean_acc\": 0.587}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "sonar",
+          "metadata_failure_mode": "synergy_harmful",
+          "eval_figs_minus_ro_pp": -2.93,
+          "eval_sg25_minus_ro_pp": -18.71,
+          "eval_synergy_stability_jaccard": 0.2485,
+          "predict_failure_mode": "synergy_harmful"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"vehicle\"}",
+          "output": "{\"failure_mode\": \"oblique_incompatible\", \"figs_mean_acc\": 0.6773, \"ro_figs_mean_acc\": 0.5034, \"sg25_mean_acc\": 0.4562}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "vehicle",
+          "metadata_failure_mode": "oblique_incompatible",
+          "eval_figs_minus_ro_pp": 17.39,
+          "eval_sg25_minus_ro_pp": -4.72,
+          "eval_synergy_stability_jaccard": 0.6608,
+          "predict_failure_mode": "oblique_incompatible"
+        },
+        {
+          "input": "{\"module\": \"B_failure_taxonomy\", \"dataset\": \"wine\"}",
+          "output": "{\"failure_mode\": \"synergy_harmful\", \"figs_mean_acc\": 0.8595, \"ro_figs_mean_acc\": 0.927, \"sg25_mean_acc\": 0.8654}",
+          "metadata_module": "B_failure_taxonomy",
+          "metadata_dataset_name": "wine",
+          "metadata_failure_mode": "synergy_harmful",
+          "eval_figs_minus_ro_pp": -6.75,
+          "eval_sg25_minus_ro_pp": -6.16,
+          "eval_synergy_stability_jaccard": 0.4379,
+          "predict_failure_mode": "synergy_harmful"
+        }
+      ]
+    },
+    {
+      "dataset": "split_catalog",
+      "examples": [
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"diabetes_SG-FIGS-10\", \"dataset\": \"diabetes\", \"method\": \"SG-FIGS-10\"}",
+          "output": "{\"features\": [\"plas\", \"mass\", \"age\"], \"abs_weights\": [0.181039, 0.097461, 0.074504], \"impurity_reduction\": 35.9642, \"rule_str\": \"-0.181*plas + -0.097*mass + -0.075*age + 0.640 <= 0.503\", \"domain_annotation\": \"glucose-BMI-age metabolic risk triad\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "diabetes_SG-FIGS-10",
+          "metadata_dataset_name": "diabetes",
+          "metadata_method": "SG-FIGS-10",
+          "metadata_n_features": 3,
+          "eval_impurity_reduction": 35.9642,
+          "eval_n_features": 3.0,
+          "predict_domain_annotation": "glucose-BMI-age metabolic risk triad"
+        },
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"diabetes_SG-FIGS-25\", \"dataset\": \"diabetes\", \"method\": \"SG-FIGS-25\"}",
+          "output": "{\"features\": [\"plas\", \"mass\", \"age\"], \"abs_weights\": [0.181039, 0.097461, 0.074504], \"impurity_reduction\": 35.9642, \"rule_str\": \"-0.181*plas + -0.097*mass + -0.075*age + 0.640 <= 0.503\", \"domain_annotation\": \"glucose-BMI-age metabolic risk triad\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "diabetes_SG-FIGS-25",
+          "metadata_dataset_name": "diabetes",
+          "metadata_method": "SG-FIGS-25",
+          "metadata_n_features": 3,
+          "eval_impurity_reduction": 35.9642,
+          "eval_n_features": 3.0,
+          "predict_domain_annotation": "glucose-BMI-age metabolic risk triad"
+        },
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"diabetes_SG-FIGS-50\", \"dataset\": \"diabetes\", \"method\": \"SG-FIGS-50\"}",
+          "output": "{\"features\": [\"preg\", \"plas\", \"mass\", \"age\"], \"abs_weights\": [0.053101, 0.18323, 0.097865, 0.043683], \"impurity_reduction\": 34.9363, \"rule_str\": \"-0.053*preg + -0.183*plas + -0.098*mass + -0.044*age + 0.639 <= 0.659\", \"domain_annotation\": \"glucose-BMI-age metabolic risk triad\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "diabetes_SG-FIGS-50",
+          "metadata_dataset_name": "diabetes",
+          "metadata_method": "SG-FIGS-50",
+          "metadata_n_features": 4,
+          "eval_impurity_reduction": 34.9363,
+          "eval_n_features": 4.0,
+          "predict_domain_annotation": "glucose-BMI-age metabolic risk triad"
+        },
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"heart_statlog_SG-FIGS-10\", \"dataset\": \"heart_statlog\", \"method\": \"SG-FIGS-10\"}",
+          "output": "{\"features\": [\"number_of_major_vessels\", \"thal\"], \"abs_weights\": [0.163864, 0.228802], \"impurity_reduction\": 18.9084, \"rule_str\": \"-0.164*number_of_major_vessels + -0.229*thal + 0.542 <= 0.446\", \"domain_annotation\": \"cardiovascular anatomy indicators\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "heart_statlog_SG-FIGS-10",
+          "metadata_dataset_name": "heart_statlog",
+          "metadata_method": "SG-FIGS-10",
+          "metadata_n_features": 2,
+          "eval_impurity_reduction": 18.9084,
+          "eval_n_features": 2.0,
+          "predict_domain_annotation": "cardiovascular anatomy indicators"
+        },
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"heart_statlog_SG-FIGS-25\", \"dataset\": \"heart_statlog\", \"method\": \"SG-FIGS-25\"}",
+          "output": "{\"features\": [\"age\", \"maximum_heart_rate_achieved\", \"oldpeak\", \"number_of_major_vessels\", \"thal\"], \"abs_weights\": [0.03623, 0.088618, 0.092855, 0.146888, 0.188981], \"impurity_reduction\": 22.1342, \"rule_str\": \"0.036*age + 0.089*maximum_heart_rate_achieved + -0.093*oldpeak + -0.147*number_of_major_vessels + -0.189*thal + 0.547 <= 0.466\", \"domain_annotation\": \"cardiovascular anatomy indicators\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "heart_statlog_SG-FIGS-25",
+          "metadata_dataset_name": "heart_statlog",
+          "metadata_method": "SG-FIGS-25",
+          "metadata_n_features": 5,
+          "eval_impurity_reduction": 22.1342,
+          "eval_n_features": 5.0,
+          "predict_domain_annotation": "cardiovascular anatomy indicators"
+        },
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"heart_statlog_SG-FIGS-50\", \"dataset\": \"heart_statlog\", \"method\": \"SG-FIGS-50\"}",
+          "output": "{\"features\": [\"thal\", \"number_of_major_vessels\", \"age\", \"maximum_heart_rate_achieved\", \"oldpeak\"], \"abs_weights\": [0.188981, 0.146888, 0.03623, 0.088618, 0.092855], \"impurity_reduction\": 22.1342, \"rule_str\": \"-0.189*thal + -0.147*number_of_major_vessels + 0.036*age + 0.089*maximum_heart_rate_achieved + -0.093*oldpeak + 0.547 <= 0.466\", \"domain_annotation\": \"cardiovascular anatomy indicators\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "heart_statlog_SG-FIGS-50",
+          "metadata_dataset_name": "heart_statlog",
+          "metadata_method": "SG-FIGS-50",
+          "metadata_n_features": 5,
+          "eval_impurity_reduction": 22.1342,
+          "eval_n_features": 5.0,
+          "predict_domain_annotation": "cardiovascular anatomy indicators"
+        },
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"breast_cancer_SG-FIGS-10\", \"dataset\": \"breast_cancer\", \"method\": \"SG-FIGS-10\"}",
+          "output": "{\"features\": [\"worst radius\", \"worst smoothness\", \"worst concave points\"], \"abs_weights\": [0.2435, 0.074405, 0.158344], \"impurity_reduction\": 88.4505, \"rule_str\": \"0.243*worst radius + 0.074*worst smoothness + 0.158*worst concave points + 0.377 <= 0.428\", \"domain_annotation\": \"tumor morphology measures\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "breast_cancer_SG-FIGS-10",
+          "metadata_dataset_name": "breast_cancer",
+          "metadata_method": "SG-FIGS-10",
+          "metadata_n_features": 3,
+          "eval_impurity_reduction": 88.4505,
+          "eval_n_features": 3.0,
+          "predict_domain_annotation": "tumor morphology measures"
+        },
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"breast_cancer_SG-FIGS-25\", \"dataset\": \"breast_cancer\", \"method\": \"SG-FIGS-25\"}",
+          "output": "{\"features\": [\"worst radius\", \"worst smoothness\", \"worst concave points\", \"worst concavity\", \"mean concavity\"], \"abs_weights\": [0.256271, 0.076392, 0.089016, 0.03843, 0.030462], \"impurity_reduction\": 91.3058, \"rule_str\": \"0.256*worst radius + 0.076*worst smoothness + 0.089*worst concave points + 0.038*worst concavity + 0.030*mean concavity + 0.377 <= 0.450\", \"domain_annotation\": \"tumor morphology measures\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "breast_cancer_SG-FIGS-25",
+          "metadata_dataset_name": "breast_cancer",
+          "metadata_method": "SG-FIGS-25",
+          "metadata_n_features": 5,
+          "eval_impurity_reduction": 91.3058,
+          "eval_n_features": 5.0,
+          "predict_domain_annotation": "tumor morphology measures"
+        },
+        {
+          "input": "{\"module\": \"C_split_catalog\", \"combo_key\": \"breast_cancer_SG-FIGS-50\", \"dataset\": \"breast_cancer\", \"method\": \"SG-FIGS-50\"}",
+          "output": "{\"features\": [\"worst radius\", \"worst smoothness\", \"worst concave points\", \"worst concavity\", \"mean concavity\"], \"abs_weights\": [0.256271, 0.076392, 0.089016, 0.03843, 0.030462], \"impurity_reduction\": 91.3058, \"rule_str\": \"0.256*worst radius + 0.076*worst smoothness + 0.089*worst concave points + 0.038*worst concavity + 0.030*mean concavity + 0.377 <= 0.450\", \"domain_annotation\": \"tumor morphology measures\"}",
+          "metadata_module": "C_split_catalog",
+          "metadata_combo_key": "breast_cancer_SG-FIGS-50",
+          "metadata_dataset_name": "breast_cancer",
+          "metadata_method": "SG-FIGS-50",
+          "metadata_n_features": 5,
+          "eval_impurity_reduction": 91.3058,
+          "eval_n_features": 5.0,
+          "predict_domain_annotation": "tumor morphology measures"
+        }
+      ]
+    },
+    {
+      "dataset": "synergy_alignment",
+      "examples": [
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"diabetes_SG-FIGS-10\", \"n_features\": 3}",
+          "output": "{\"spearman_rho\": -0.5, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "diabetes_SG-FIGS-10",
+          "metadata_dataset_name": "diabetes",
+          "metadata_n_features": 3,
+          "eval_spearman_rho": -0.5,
+          "eval_spearman_p_value": 0.6667,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "negative"
+        },
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"diabetes_SG-FIGS-25\", \"n_features\": 3}",
+          "output": "{\"spearman_rho\": -0.5, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "diabetes_SG-FIGS-25",
+          "metadata_dataset_name": "diabetes",
+          "metadata_n_features": 3,
+          "eval_spearman_rho": -0.5,
+          "eval_spearman_p_value": 0.6667,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "negative"
+        },
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"diabetes_SG-FIGS-50\", \"n_features\": 4}",
+          "output": "{\"spearman_rho\": 0.0, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "diabetes_SG-FIGS-50",
+          "metadata_dataset_name": "diabetes",
+          "metadata_n_features": 4,
+          "eval_spearman_rho": 0.0,
+          "eval_spearman_p_value": 1.0,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "zero"
+        },
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"heart_statlog_SG-FIGS-10\", \"n_features\": 2}",
+          "output": "{\"spearman_rho\": null, \"computable\": false, \"top2_matches_highest_synergy\": true}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "heart_statlog_SG-FIGS-10",
+          "metadata_dataset_name": "heart_statlog",
+          "metadata_n_features": 2,
+          "eval_spearman_rho": 0.0,
+          "eval_spearman_p_value": 1.0,
+          "eval_computable": 0.0,
+          "eval_top2_matches": 1.0,
+          "predict_alignment_direction": "zero"
+        },
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"heart_statlog_SG-FIGS-25\", \"n_features\": 5}",
+          "output": "{\"spearman_rho\": -0.7, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "heart_statlog_SG-FIGS-25",
+          "metadata_dataset_name": "heart_statlog",
+          "metadata_n_features": 5,
+          "eval_spearman_rho": -0.7,
+          "eval_spearman_p_value": 0.1881,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "negative"
+        },
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"heart_statlog_SG-FIGS-50\", \"n_features\": 5}",
+          "output": "{\"spearman_rho\": -0.7, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "heart_statlog_SG-FIGS-50",
+          "metadata_dataset_name": "heart_statlog",
+          "metadata_n_features": 5,
+          "eval_spearman_rho": -0.7,
+          "eval_spearman_p_value": 0.1881,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "negative"
+        },
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"breast_cancer_SG-FIGS-10\", \"n_features\": 3}",
+          "output": "{\"spearman_rho\": 0.5, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "breast_cancer_SG-FIGS-10",
+          "metadata_dataset_name": "breast_cancer",
+          "metadata_n_features": 3,
+          "eval_spearman_rho": 0.5,
+          "eval_spearman_p_value": 0.6667,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "positive"
+        },
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"breast_cancer_SG-FIGS-25\", \"n_features\": 5}",
+          "output": "{\"spearman_rho\": 0.4, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "breast_cancer_SG-FIGS-25",
+          "metadata_dataset_name": "breast_cancer",
+          "metadata_n_features": 5,
+          "eval_spearman_rho": 0.4,
+          "eval_spearman_p_value": 0.5046,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "positive"
+        },
+        {
+          "input": "{\"module\": \"D_synergy_alignment\", \"combo_key\": \"breast_cancer_SG-FIGS-50\", \"n_features\": 5}",
+          "output": "{\"spearman_rho\": 0.4, \"computable\": true, \"top2_matches_highest_synergy\": false}",
+          "metadata_module": "D_synergy_alignment",
+          "metadata_combo_key": "breast_cancer_SG-FIGS-50",
+          "metadata_dataset_name": "breast_cancer",
+          "metadata_n_features": 5,
+          "eval_spearman_rho": 0.4,
+          "eval_spearman_p_value": 0.5046,
+          "eval_computable": 1.0,
+          "eval_top2_matches": 0.0,
+          "predict_alignment_direction": "positive"
+        }
+      ]
+    },
+    {
+      "dataset": "success_criteria_verdicts",
+      "examples": [
+        {
+          "input": "{\"module\": \"E_success_verdicts\", \"criterion\": \"Accuracy parity with fewer splits\"}",
+          "output": "{\"verdict\": \"DISCONFIRMED\", \"evidence\": \"SG-FIGS-25 loses 10.3pp to FIGS on average (CI=[6.3, 14.3]pp). Mean oblique fraction for SG-FIGS-25: 5.4%.\"}",
+          "metadata_module": "E_success_verdicts",
+          "metadata_criterion": "Accuracy parity with fewer splits",
+          "eval_verdict_score": 0.0,
+          "predict_verdict": "DISCONFIRMED"
+        },
+        {
+          "input": "{\"module\": \"E_success_verdicts\", \"criterion\": \"Higher interpretability score\"}",
+          "output": "{\"verdict\": \"PARTIALLY_CONFIRMED\", \"evidence\": \"Oblique activation rate: 10.0% (across 90 total splits). Mean synergy alignment (Spearman \\u03c1): -0.138. Oblique splits combine synergistic features but low activation rate limits overall interpretability improvement.\"}",
+          "metadata_module": "E_success_verdicts",
+          "metadata_criterion": "Higher interpretability score",
+          "eval_verdict_score": 0.5,
+          "predict_verdict": "PARTIALLY_CONFIRMED"
+        },
+        {
+          "input": "{\"module\": \"E_success_verdicts\", \"criterion\": \"Domain-meaningful splits on 3+ datasets\"}",
+          "output": "{\"verdict\": \"CONFIRMED\", \"evidence\": \"3 datasets show domain-meaningful oblique splits: ['breast_cancer', 'diabetes', 'heart_statlog']. breast_cancer: worst_radius, worst_smoothness, and worst_concave_points capture tumor morphology \\u2014 larger, rougher tumors with more concavities are hallmarks of malignancy. diabetes: plas (plasma glucose), mass (BMI), and age form a clinically known metabolic syndrome triad for diabetes risk assessment. heart_statlog: number_of_major_vessels and thal (thalassemia type) are key cardiovascular anatomy\"}",
+          "metadata_module": "E_success_verdicts",
+          "metadata_criterion": "Domain-meaningful splits on 3+ datasets",
+          "eval_verdict_score": 1.0,
+          "predict_verdict": "CONFIRMED"
+        }
+      ]
+    },
+    {
+      "dataset": "paper_narrative",
+      "examples": [
+        {
+          "input": "{\"module\": \"F_paper_narrative\", \"finding_rank\": 1}",
+          "output": "{\"finding\": \"SG-FIGS does not improve accuracy over standard FIGS\", \"detail\": \"Bootstrap CIs show SG-FIGS-25 loses ~5-10pp vs FIGS across 12 datasets. The accuracy parity criterion is DISCONFIRMED.\"}",
+          "metadata_module": "F_paper_narrative",
+          "metadata_finding_rank": 1,
+          "eval_finding_rank": 1.0,
+          "predict_finding_category": "negative"
+        },
+        {
+          "input": "{\"module\": \"F_paper_narrative\", \"finding_rank\": 2}",
+          "output": "{\"finding\": \"Oblique splits produce domain-meaningful feature combinations\", \"detail\": \"diabetes (plas+mass+age = metabolic triad), heart (vessels+thal = cardiovascular anatomy), breast_cancer (worst_radius+smoothness+concave_points = tumor morphology) \\u2014 all clinically meaningful.\"}",
+          "metadata_module": "F_paper_narrative",
+          "metadata_finding_rank": 2,
+          "eval_finding_rank": 2.0,
+          "predict_finding_category": "positive"
+        },
+        {
+          "input": "{\"module\": \"F_paper_narrative\", \"finding_rank\": 3}",
+          "output": "{\"finding\": \"Synergy graph sparsity is the primary failure mode\", \"detail\": \"4/12 datasets have zero oblique splits at 25% threshold due to sparse synergy graphs.\"}",
+          "metadata_module": "F_paper_narrative",
+          "metadata_finding_rank": 3,
+          "eval_finding_rank": 3.0,
+          "predict_finding_category": "positive"
+        },
+        {
+          "input": "{\"module\": \"F_paper_narrative\", \"finding_rank\": 4}",
+          "output": "{\"finding\": \"Synergy alignment with Ridge weights is mixed\", \"detail\": \"Mean Spearman \\u03c1 = -0.138. Positive for breast_cancer, negative for heart/diabetes \\u2014 synergy identifies related features but not optimal linear combos.\"}",
+          "metadata_module": "F_paper_narrative",
+          "metadata_finding_rank": 4,
+          "eval_finding_rank": 4.0,
+          "predict_finding_category": "positive"
+        },
+        {
+          "input": "{\"module\": \"F_paper_narrative\", \"finding_rank\": 5}",
+          "output": "{\"finding\": \"PID computation is fast and scalable\", \"detail\": \"Total pipeline runtime: 966s across 12 datasets. Even sonar (1770 pairs) completes in ~17s.\"}",
+          "metadata_module": "F_paper_narrative",
+          "metadata_finding_rank": 5,
+          "eval_finding_rank": 5.0,
+          "predict_finding_category": "positive"
+        },
+        {
+          "input": "{\"module\": \"F_paper_narrative\", \"finding_rank\": 6}",
+          "output": "{\"finding\": \"Synergy graph stability varies widely across datasets\", \"detail\": \"Jaccard stability ranges from 0.25 to 1.00. banknote (1.0) is perfectly stable, sonar (0.25) highly unstable.\"}",
+          "metadata_module": "F_paper_narrative",
+          "metadata_finding_rank": 6,
+          "eval_finding_rank": 6.0,
+          "predict_finding_category": "positive"
+        },
+        {
+          "input": "{\"module\": \"F_paper_narrative\", \"finding_rank\": 7}",
+          "output": "{\"finding\": \"Oblique activation rate is low at ~10%\", \"detail\": \"9 oblique splits out of 90 total = 10.0% activation rate.\"}",
+          "metadata_module": "F_paper_narrative",
+          "metadata_finding_rank": 7,
+          "eval_finding_rank": 7.0,
+          "predict_finding_category": "positive"
+        }
+      ]
+    }
+  ]
+}

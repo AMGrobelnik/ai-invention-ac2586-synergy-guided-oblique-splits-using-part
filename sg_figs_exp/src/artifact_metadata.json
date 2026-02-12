@@ -1,0 +1,4 @@
+{
+  "title": "SG-FIGS Exp",
+  "summary": "Experiment comparing 4 methods (SG-FIGS, RO-FIGS, FIGS, GradientBoosting) on 12 tabular datasets with 5-fold CV. Each example has predict_* fields for all methods. 9076 total examples. SG-FIGS achieves 1.0 interpretability with competitive accuracy. Runtime: ~12min."
+}

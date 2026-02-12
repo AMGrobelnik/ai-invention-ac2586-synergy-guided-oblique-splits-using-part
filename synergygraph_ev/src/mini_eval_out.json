@@ -1,0 +1,191 @@
+{
+  "metrics_agg": {
+    "m1_density_gap_spearman_rho": -0.0772,
+    "m1_density_gap_spearman_p": 0.806582,
+    "m1_n_datasets": 12,
+    "m2_n_monotonic_improving": 1,
+    "m2_n_monotonic_worsening": 1,
+    "m2_n_non_monotonic": 9,
+    "m2_n_flat": 1,
+    "m3_oblique_acc_pearson_r": -0.2911,
+    "m3_oblique_acc_pearson_p": 0.076059,
+    "m3_n_zero_oblique_datasets": 4,
+    "m3_mean_acc_zero_oblique": 0.7419,
+    "m3_mean_acc_nonzero_oblique": 0.6915,
+    "m4_n_zero_oblique_datasets": 4,
+    "m4_n_discrepancies": 4,
+    "m5_stability_gap_spearman_rho": -0.035,
+    "m5_stability_gap_spearman_p": 0.911904
+  },
+  "datasets": [
+    {
+      "dataset": "australian",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"australian\", \"analysis\": \"synergy_graph_sufficiency\", \"max_rules\": 10}",
+          "output": "density=0.2527, acc_gap=0.0203, profile=monotonic_worsening, oblique_frac_sg25=0.0000, identical_to_figs=False, jaccard=0.7196",
+          "eval_graph_density_25pct": 0.2527,
+          "eval_accuracy_gap": 0.0203,
+          "eval_avg_synergy_edges": 23.0,
+          "eval_figs_accuracy": 0.8507,
+          "eval_sg10_accuracy": 0.8275,
+          "eval_sg25_accuracy": 0.8304,
+          "eval_sg50_accuracy": 0.7942,
+          "eval_relative_sg10": -0.0232,
+          "eval_relative_sg25": -0.0203,
+          "eval_relative_sg50": -0.0565,
+          "eval_oblique_fraction_sg25": 0.0,
+          "eval_accuracy_sg25": 0.8304,
+          "eval_max_fold_discrepancy": 0.07246377,
+          "eval_is_identical_to_figs": 0.0,
+          "eval_mean_jaccard": 0.7196,
+          "eval_stability_accuracy_gap": 0.0203,
+          "eval_auc_gap": 0.0295,
+          "metadata_dataset": "australian",
+          "metadata_max_rules": 10,
+          "metadata_n_features": 14,
+          "metadata_total_possible_pairs": 91,
+          "metadata_threshold_profile": "monotonic_worsening",
+          "predict_graph_density": "0.2527",
+          "predict_threshold_profile": "monotonic_worsening"
+        },
+        {
+          "input": "{\"dataset\": \"australian\", \"method\": \"SG-FIGS-10\", \"analysis\": \"method_performance\", \"max_rules\": 10}",
+          "output": "method=SG-FIGS-10, oblique_frac=0.0000, accuracy=0.8275, avg_edges=10.0",
+          "eval_oblique_fraction": 0.0,
+          "eval_method_accuracy": 0.8275,
+          "eval_avg_synergy_edges": 10.0,
+          "metadata_dataset": "australian",
+          "metadata_method": "SG-FIGS-10",
+          "metadata_max_rules": 10,
+          "predict_oblique_fraction": "0.0",
+          "predict_accuracy": "0.8275"
+        },
+        {
+          "input": "{\"dataset\": \"australian\", \"method\": \"SG-FIGS-25\", \"analysis\": \"method_performance\", \"max_rules\": 10}",
+          "output": "method=SG-FIGS-25, oblique_frac=0.0000, accuracy=0.8304, avg_edges=23.0",
+          "eval_oblique_fraction": 0.0,
+          "eval_method_accuracy": 0.8304,
+          "eval_avg_synergy_edges": 23.0,
+          "metadata_dataset": "australian",
+          "metadata_method": "SG-FIGS-25",
+          "metadata_max_rules": 10,
+          "predict_oblique_fraction": "0.0",
+          "predict_accuracy": "0.8304"
+        }
+      ]
+    },
+    {
+      "dataset": "banknote",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"banknote\", \"analysis\": \"synergy_graph_sufficiency\", \"max_rules\": 10}",
+          "output": "density=0.3333, acc_gap=0.1524, profile=non_monotonic, oblique_frac_sg25=0.0000, identical_to_figs=False, jaccard=1.0000",
+          "eval_graph_density_25pct": 0.3333,
+          "eval_accuracy_gap": 0.1524,
+          "eval_avg_synergy_edges": 2.0,
+          "eval_figs_accuracy": 0.9606,
+          "eval_sg10_accuracy": 0.8382,
+          "eval_sg25_accuracy": 0.8083,
+          "eval_sg50_accuracy": 0.879,
+          "eval_relative_sg10": -0.1224,
+          "eval_relative_sg25": -0.1524,
+          "eval_relative_sg50": -0.0816,
+          "eval_oblique_fraction_sg25": 0.0,
+          "eval_accuracy_sg25": 0.8083,
+          "eval_max_fold_discrepancy": 0.30291971,
+          "eval_is_identical_to_figs": 0.0,
+          "eval_mean_jaccard": 1.0,
+          "eval_stability_accuracy_gap": 0.1524,
+          "eval_auc_gap": 0.0753,
+          "metadata_dataset": "banknote",
+          "metadata_max_rules": 10,
+          "metadata_n_features": 4,
+          "metadata_total_possible_pairs": 6,
+          "metadata_threshold_profile": "non_monotonic",
+          "predict_graph_density": "0.3333",
+          "predict_threshold_profile": "non_monotonic"
+        },
+        {
+          "input": "{\"dataset\": \"banknote\", \"method\": \"SG-FIGS-10\", \"analysis\": \"method_performance\", \"max_rules\": 10}",
+          "output": "method=SG-FIGS-10, oblique_frac=0.0000, accuracy=0.8382, avg_edges=1.0",
+          "eval_oblique_fraction": 0.0,
+          "eval_method_accuracy": 0.8382,
+          "eval_avg_synergy_edges": 1.0,
+          "metadata_dataset": "banknote",
+          "metadata_method": "SG-FIGS-10",
+          "metadata_max_rules": 10,
+          "predict_oblique_fraction": "0.0",
+          "predict_accuracy": "0.8382"
+        },
+        {
+          "input": "{\"dataset\": \"banknote\", \"method\": \"SG-FIGS-25\", \"analysis\": \"method_performance\", \"max_rules\": 10}",
+          "output": "method=SG-FIGS-25, oblique_frac=0.0000, accuracy=0.8083, avg_edges=2.0",
+          "eval_oblique_fraction": 0.0,
+          "eval_method_accuracy": 0.8083,
+          "eval_avg_synergy_edges": 2.0,
+          "metadata_dataset": "banknote",
+          "metadata_method": "SG-FIGS-25",
+          "metadata_max_rules": 10,
+          "predict_oblique_fraction": "0.0",
+          "predict_accuracy": "0.8083"
+        }
+      ]
+    },
+    {
+      "dataset": "breast_cancer",
+      "examples": [
+        {
+          "input": "{\"dataset\": \"breast_cancer\", \"analysis\": \"synergy_graph_sufficiency\", \"max_rules\": 10}",
+          "output": "density=0.2506, acc_gap=0.0175, profile=non_monotonic, oblique_frac_sg25=0.0800, jaccard=0.7065",
+          "eval_graph_density_25pct": 0.2506,
+          "eval_accuracy_gap": 0.0175,
+          "eval_avg_synergy_edges": 109.0,
+          "eval_figs_accuracy": 0.9227,
+          "eval_sg10_accuracy": 0.9138,
+          "eval_sg25_accuracy": 0.9052,
+          "eval_sg50_accuracy": 0.942,
+          "eval_relative_sg10": -0.0089,
+          "eval_relative_sg25": -0.0175,
+          "eval_relative_sg50": 0.0193,
+          "eval_oblique_fraction_sg25": 0.08,
+          "eval_accuracy_sg25": 0.9052,
+          "eval_mean_jaccard": 0.7065,
+          "eval_stability_accuracy_gap": 0.0175,
+          "eval_auc_gap": -0.037,
+          "metadata_dataset": "breast_cancer",
+          "metadata_max_rules": 10,
+          "metadata_n_features": 30,
+          "metadata_total_possible_pairs": 435,
+          "metadata_threshold_profile": "non_monotonic",
+          "predict_graph_density": "0.2506",
+          "predict_threshold_profile": "non_monotonic"
+        },
+        {
+          "input": "{\"dataset\": \"breast_cancer\", \"method\": \"SG-FIGS-10\", \"analysis\": \"method_performance\", \"max_rules\": 10}",
+          "output": "method=SG-FIGS-10, oblique_frac=0.0200, accuracy=0.9138, avg_edges=44.0",
+          "eval_oblique_fraction": 0.02,
+          "eval_method_accuracy": 0.9138,
+          "eval_avg_synergy_edges": 44.0,
+          "metadata_dataset": "breast_cancer",
+          "metadata_method": "SG-FIGS-10",
+          "metadata_max_rules": 10,
+          "predict_oblique_fraction": "0.02",
+          "predict_accuracy": "0.9138"
+        },
+        {
+          "input": "{\"dataset\": \"breast_cancer\", \"method\": \"SG-FIGS-25\", \"analysis\": \"method_performance\", \"max_rules\": 10}",
+          "output": "method=SG-FIGS-25, oblique_frac=0.0800, accuracy=0.9052, avg_edges=109.0",
+          "eval_oblique_fraction": 0.08,
+          "eval_method_accuracy": 0.9052,
+          "eval_avg_synergy_edges": 109.0,
+          "metadata_dataset": "breast_cancer",
+          "metadata_method": "SG-FIGS-25",
+          "metadata_max_rules": 10,
+          "predict_oblique_fraction": "0.08",
+          "predict_accuracy": "0.9052"
+        }
+      ]
+    }
+  ]
+}

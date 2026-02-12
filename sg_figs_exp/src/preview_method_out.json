@@ -1,0 +1,109 @@
+{
+  "datasets": [
+    {
+      "dataset": "wine",
+      "examples": [
+        {
+          "input": "{\"alcohol\": 14.23, \"malic_acid\": 1.71, \"ash\": 2.43, \"alcalinity_of_ash\": 15.6, \"magnesium\": 127.0, \"total_phenols\": 2.8, \"flavanoids\": 3.06, \"nonflavanoid_phenols\": 0.28, \"proanthocyanins\": 2.29, \"col...",
+          "output": "class_0",
+          "metadata_fold": 0,
+          "metadata_row_index": 0,
+          "predict_FIGS": "class_0",
+          "predict_RO_FIGS": "class_0",
+          "predict_SG_FIGS": "class_0",
+          "predict_GradientBoosting": "class_0"
+        },
+        {
+          "input": "{\"alcohol\": 13.2, \"malic_acid\": 1.78, \"ash\": 2.14, \"alcalinity_of_ash\": 11.2, \"magnesium\": 100.0, \"total_phenols\": 2.65, \"flavanoids\": 2.76, \"nonflavanoid_phenols\": 0.26, \"proanthocyanins\": 1.28, \"col...",
+          "output": "class_0",
+          "metadata_fold": 0,
+          "metadata_row_index": 1,
+          "predict_FIGS": "class_0",
+          "predict_RO_FIGS": "class_0",
+          "predict_SG_FIGS": "class_0",
+          "predict_GradientBoosting": "class_0"
+        },
+        {
+          "input": "{\"alcohol\": 13.16, \"malic_acid\": 2.36, \"ash\": 2.67, \"alcalinity_of_ash\": 18.6, \"magnesium\": 101.0, \"total_phenols\": 2.8, \"flavanoids\": 3.24, \"nonflavanoid_phenols\": 0.3, \"proanthocyanins\": 2.81, \"colo...",
+          "output": "class_0",
+          "metadata_fold": 2,
+          "metadata_row_index": 2,
+          "predict_FIGS": "class_0",
+          "predict_RO_FIGS": "class_0",
+          "predict_SG_FIGS": "class_0",
+          "predict_GradientBoosting": "class_0"
+        }
+      ]
+    },
+    {
+      "dataset": "sonar",
+      "examples": [
+        {
+          "input": "{\"attribute_1\": -0.399551, \"attribute_2\": -0.040648, \"attribute_3\": -0.026926, \"attribute_4\": -0.715105, \"attribute_5\": 0.364456, \"attribute_6\": -0.101253, \"attribute_7\": 0.521638, \"attribute_8\": 0.29...",
+          "output": "Rock",
+          "metadata_fold": 3,
+          "metadata_row_index": 0,
+          "predict_FIGS": "Mine",
+          "predict_RO_FIGS": "Mine",
+          "predict_SG_FIGS": "Mine",
+          "predict_GradientBoosting": "Mine"
+        },
+        {
+          "input": "{\"attribute_1\": 0.703538, \"attribute_2\": 0.42163, \"attribute_3\": 1.055618, \"attribute_4\": 0.32333, \"attribute_5\": 0.777676, \"attribute_6\": 2.607217, \"attribute_7\": 1.522625, \"attribute_8\": 2.510982, \"...",
+          "output": "Rock",
+          "metadata_fold": 2,
+          "metadata_row_index": 1,
+          "predict_FIGS": "Mine",
+          "predict_RO_FIGS": "Rock",
+          "predict_SG_FIGS": "Mine",
+          "predict_GradientBoosting": "Mine"
+        },
+        {
+          "input": "{\"attribute_1\": -0.129229, \"attribute_2\": 0.601067, \"attribute_3\": 1.723404, \"attribute_4\": 1.172176, \"attribute_5\": 0.400545, \"attribute_6\": 2.093337, \"attribute_7\": 1.96877, \"attribute_8\": 2.85237, ...",
+          "output": "Rock",
+          "metadata_fold": 4,
+          "metadata_row_index": 2,
+          "predict_FIGS": "Mine",
+          "predict_RO_FIGS": "Mine",
+          "predict_SG_FIGS": "Mine",
+          "predict_GradientBoosting": "Mine"
+        }
+      ]
+    },
+    {
+      "dataset": "glass",
+      "examples": [
+        {
+          "input": "{\"RI\": -0.143715, \"Na\": -0.758384, \"Mg\": 0.566677, \"Al\": -0.652289, \"Si\": 0.490551, \"K\": 0.219689, \"Ca\": -0.13168, \"Ba\": -0.352877, \"Fe\": -0.586451}",
+          "output": "build wind float",
+          "metadata_fold": 1,
+          "metadata_row_index": 0,
+          "predict_FIGS": "build wind float",
+          "predict_RO_FIGS": "build wind float",
+          "predict_SG_FIGS": "build wind float",
+          "predict_GradientBoosting": "build wind float"
+        },
+        {
+          "input": "{\"RI\": -0.638803, \"Na\": -1.531681, \"Mg\": 0.580575, \"Al\": -0.190536, \"Si\": 0.309376, \"K\": 0.112107, \"Ca\": -0.300715, \"Ba\": -0.352877, \"Fe\": -0.586451}",
+          "output": "vehic wind float",
+          "metadata_fold": 0,
+          "metadata_row_index": 1,
+          "predict_FIGS": "build wind float",
+          "predict_RO_FIGS": "build wind float",
+          "predict_SG_FIGS": "build wind float",
+          "predict_GradientBoosting": "build wind float"
+        },
+        {
+          "input": "{\"RI\": -0.143715, \"Na\": -0.242853, \"Mg\": 0.552779, \"Al\": -0.070079, \"Si\": -0.014151, \"K\": 0.142844, \"Ca\": -0.371146, \"Ba\": -0.352877, \"Fe\": -0.586451}",
+          "output": "build wind float",
+          "metadata_fold": 0,
+          "metadata_row_index": 2,
+          "predict_FIGS": "build wind non-float",
+          "predict_RO_FIGS": "build wind non-float",
+          "predict_SG_FIGS": "build wind float",
+          "predict_GradientBoosting": "vehic wind float"
+        }
+      ]
+    }
+  ]
+}

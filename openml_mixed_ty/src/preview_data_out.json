@@ -1,0 +1,122 @@
+{
+  "datasets": [
+    {
+      "dataset": "credit_g",
+      "examples": [
+        {
+          "input": "{\"checking_status\": 1, \"duration\": -1.236478, \"credit_history\": 1, \"purpose\": 6, \"credit_amount\": -0.745131, \"savings_status\": 4, \"employment\": 3, \"installment_commitment\": 0.918477, \"personal_status\"...",
+          "output": "good",
+          "metadata_fold": 1,
+          "metadata_feature_names": [
+            "checking_status",
+            "duration",
+            "credit_history"
+          ],
+          "metadata_feature_types": [
+            "categorical",
+            "continuous",
+            "categorical"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 0
+        },
+        {
+          "input": "{\"checking_status\": 0, \"duration\": 2.248194, \"credit_history\": 3, \"purpose\": 6, \"credit_amount\": 0.949817, \"savings_status\": 2, \"employment\": 0, \"installment_commitment\": -0.870183, \"personal_status\":...",
+          "output": "bad",
+          "metadata_fold": 0,
+          "metadata_feature_names": [
+            "checking_status",
+            "duration",
+            "credit_history"
+          ],
+          "metadata_feature_types": [
+            "categorical",
+            "continuous",
+            "categorical"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 1
+        },
+        {
+          "input": "{\"checking_status\": 3, \"duration\": -0.738668, \"credit_history\": 1, \"purpose\": 2, \"credit_amount\": -0.416562, \"savings_status\": 2, \"employment\": 1, \"installment_commitment\": -0.870183, \"personal_status...",
+          "output": "good",
+          "metadata_fold": 3,
+          "metadata_feature_names": [
+            "checking_status",
+            "duration",
+            "credit_history"
+          ],
+          "metadata_feature_types": [
+            "categorical",
+            "continuous",
+            "categorical"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 2
+        }
+      ]
+    },
+    {
+      "dataset": "australian",
+      "examples": [
+        {
+          "input": "{\"A1\": 1, \"A2\": -0.901171, \"A3\": 1.45221, \"A4\": 1, \"A5\": 8, \"A6\": 3, \"A7\": 0.051021, \"A8\": 0, \"A9\": 0, \"A10\": -0.570149, \"A11\": 1, \"A12\": 1, \"A13\": -0.581071, \"A14\": 1.457229}",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_feature_names": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "metadata_feature_types": [
+            "categorical",
+            "continuous",
+            "continuous"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 0
+        },
+        {
+          "input": "{\"A1\": 0, \"A2\": -0.825792, \"A3\": 0.686253, \"A4\": 1, \"A5\": 12, \"A6\": 3, \"A7\": -0.885554, \"A8\": 0, \"A9\": 0, \"A10\": -0.570149, \"A11\": 0, \"A12\": 1, \"A13\": -0.125705, \"A14\": -0.745343}",
+          "output": "0",
+          "metadata_fold": 3,
+          "metadata_feature_names": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "metadata_feature_types": [
+            "categorical",
+            "continuous",
+            "continuous"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 1
+        },
+        {
+          "input": "{\"A1\": 0, \"A2\": -0.072008, \"A3\": -0.522257, \"A4\": 0, \"A5\": 8, \"A6\": 3, \"A7\": -0.16935, \"A8\": 0, \"A9\": 0, \"A10\": -0.570149, \"A11\": 1, \"A12\": 1, \"A13\": 0.85008, \"A14\": -0.745343}",
+          "output": "0",
+          "metadata_fold": 4,
+          "metadata_feature_names": [
+            "A1",
+            "A2",
+            "A3"
+          ],
+          "metadata_feature_types": [
+            "categorical",
+            "continuous",
+            "continuous"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 2
+        }
+      ]
+    }
+  ]
+}

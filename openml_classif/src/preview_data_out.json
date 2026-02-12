@@ -1,0 +1,154 @@
+{
+  "datasets": [
+    {
+      "dataset": "diabetes",
+      "examples": [
+        {
+          "input": "{\"preg\": 0.639947, \"plas\": 0.848324, \"pres\": 0.149641, \"skin\": 0.90727, \"insu\": -0.692891, \"mass\": 0.204013, \"pedi\": 0.468492, \"age\": 1.425995}",
+          "output": "tested_positive",
+          "metadata_fold": 2,
+          "metadata_feature_names": [
+            "preg",
+            "plas",
+            "pres"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 0,
+          "metadata_domain": "medical",
+          "metadata_openml_id": 37
+        },
+        {
+          "input": "{\"preg\": -0.844885, \"plas\": -1.123396, \"pres\": -0.160546, \"skin\": 0.530902, \"insu\": -0.692891, \"mass\": -0.684422, \"pedi\": -0.365061, \"age\": -0.190672}",
+          "output": "tested_negative",
+          "metadata_fold": 2,
+          "metadata_feature_names": [
+            "preg",
+            "plas",
+            "pres"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 1,
+          "metadata_domain": "medical",
+          "metadata_openml_id": 37
+        },
+        {
+          "input": "{\"preg\": 1.23388, \"plas\": 1.943724, \"pres\": -0.263941, \"skin\": -1.288212, \"insu\": -0.692891, \"mass\": -1.103255, \"pedi\": 0.604397, \"age\": -0.105584}",
+          "output": "tested_positive",
+          "metadata_fold": 3,
+          "metadata_feature_names": [
+            "preg",
+            "plas",
+            "pres"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 2,
+          "metadata_domain": "medical",
+          "metadata_openml_id": 37
+        }
+      ]
+    },
+    {
+      "dataset": "heart-statlog",
+      "examples": [
+        {
+          "input": "{\"age\": 1.712094, \"sex\": 0.6895, \"chest\": 0.870928, \"resting_blood_pressure\": -0.07541, \"serum_cholestoral\": 1.402212, \"fasting_blood_sugar\": -0.417029, \"resting_electrocardiographic_results\": 0.98166...",
+          "output": "present",
+          "metadata_fold": 1,
+          "metadata_feature_names": [
+            "age",
+            "sex",
+            "chest"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 0,
+          "metadata_domain": "medical",
+          "metadata_openml_id": 53
+        },
+        {
+          "input": "{\"age\": 1.38214, \"sex\": -1.450327, \"chest\": -0.183559, \"resting_blood_pressure\": -0.916759, \"serum_cholestoral\": 6.093004, \"fasting_blood_sugar\": -0.417029, \"resting_electrocardiographic_results\": 0.9...",
+          "output": "absent",
+          "metadata_fold": 2,
+          "metadata_feature_names": [
+            "age",
+            "sex",
+            "chest"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 1,
+          "metadata_domain": "medical",
+          "metadata_openml_id": 53
+        },
+        {
+          "input": "{\"age\": 0.282294, \"sex\": 0.6895, \"chest\": -1.238045, \"resting_blood_pressure\": -0.41195, \"serum_cholestoral\": 0.219823, \"fasting_blood_sugar\": -0.417029, \"resting_electrocardiographic_results\": -1.026...",
+          "output": "present",
+          "metadata_fold": 1,
+          "metadata_feature_names": [
+            "age",
+            "sex",
+            "chest"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 2,
+          "metadata_domain": "medical",
+          "metadata_openml_id": 53
+        }
+      ]
+    },
+    {
+      "dataset": "ionosphere",
+      "examples": [
+        {
+          "input": "{\"a01\": 0.348433, \"a02\": 0.0, \"a03\": 0.712372, \"a04\": -0.234257, \"a05\": 0.484208, \"a06\": -0.201735, \"a07\": 0.577059, \"a08\": -0.954679, \"a09\": 0.964074, \"a10\": -0.29751, \"a11\": 0.668655, \"a12\": -0.6731...",
+          "output": "g",
+          "metadata_fold": 0,
+          "metadata_feature_names": [
+            "a01",
+            "a02",
+            "a03"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 0,
+          "metadata_domain": "physics",
+          "metadata_openml_id": 59
+        },
+        {
+          "input": "{\"a01\": 0.348433, \"a02\": 0.0, \"a03\": 0.721648, \"a04\": -0.527811, \"a05\": 0.634308, \"a06\": -1.037587, \"a07\": -1.339106, \"a08\": -2.029452, \"a09\": 0.964074, \"a10\": -0.469482, \"a11\": 0.05786, \"a12\": -1.684...",
+          "output": "b",
+          "metadata_fold": 0,
+          "metadata_feature_names": [
+            "a01",
+            "a02",
+            "a03"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 1,
+          "metadata_domain": "physics",
+          "metadata_openml_id": 59
+        },
+        {
+          "input": "{\"a01\": 0.348433, \"a02\": 0.0, \"a03\": 0.721648, \"a04\": -0.176998, \"a05\": 0.768477, \"a06\": -0.241309, \"a07\": 0.914531, \"a08\": -0.461494, \"a09\": 0.746139, \"a10\": -0.350536, \"a11\": 0.452533, \"a12\": -0.205...",
+          "output": "g",
+          "metadata_fold": 4,
+          "metadata_feature_names": [
+            "a01",
+            "a02",
+            "a03"
+          ],
+          "metadata_task_type": "classification",
+          "metadata_n_classes": 2,
+          "metadata_row_index": 2,
+          "metadata_domain": "physics",
+          "metadata_openml_id": 59
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "title": "OpenML Classif.",
+  "summary": "Eight all-numeric tabular classification datasets from OpenML, covering diverse sizes (208-2310 samples), feature counts (4-60), and class counts (2-7). Datasets: diabetes (768x8, medical), heart-statlog (270x13, medical), ionosphere (351x34, physics), sonar (208x60, signal processing), vehicle (846x18, computer vision), segment (2310x19, computer vision), glass (214x9, forensics), banknote-authentication (1372x4, image processing). All features z-score standardized, with 5-fold stratified CV fold assignments. Each of the 6,339 total examples contains JSON-serialized feature values as input, class label as output, and metadata including fold index, feature names, task type, domain, and OpenML ID. Zero missing values across all datasets."
+}

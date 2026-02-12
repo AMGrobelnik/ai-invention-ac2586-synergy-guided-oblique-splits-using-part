@@ -1,0 +1,4 @@
+{
+  "title": "Split Quality",
+  "summary": "Information-theoretic split quality audit for SG-FIGS oblique splits. Evaluates 9 oblique splits across 3 datasets (diabetes, heart_statlog, breast_cancer) \u00d7 3 thresholds using 6 metrics: Synergy Concentration Ratio (mean=2.80, all >1 confirming synergy-guided selection works), Above-Median Fraction (mean=0.87 vs 0.5 random baseline), Impurity Reduction per Feature (mean=1.08, slightly above axis-aligned), Redundancy Load (mean=2.20, higher than random indicating feature overlap), Joint MI Coverage (mean=2.46), and Synergy-Weighted Efficiency. Cross-references iter2 PID synergy data with iter4 qualitative split inspection. Also includes per-fold accuracy/AUC context from iter4 experiments (144 total examples). Schema-validated against exp_eval_sol_out."
+}

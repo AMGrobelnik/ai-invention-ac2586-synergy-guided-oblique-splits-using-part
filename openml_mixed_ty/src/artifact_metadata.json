@@ -1,0 +1,4 @@
+{
+  "title": "OpenML Mixed-Type",
+  "summary": "Two OpenML mixed-type classification benchmark datasets for PID synergy computation research: (1) credit_g (German Credit, OpenML ID=31): 1000 samples, 20 features (7 numeric + 13 categorical), binary classification (good/bad credit), zero missing values; (2) australian (Australian Credit Approval, OpenML ID=40981): 690 samples, 14 features (6 numeric + 8 categorical), binary classification, zero missing values. Both datasets have categorical features ordinal-encoded and numeric features standardized. Each example includes 5-fold stratified CV fold assignments and feature type metadata (categorical vs continuous). Total: 1690 examples across 2 datasets."
+}

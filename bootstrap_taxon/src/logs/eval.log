@@ -1,0 +1,146 @@
+2026-02-12 10:07:23.950 | INFO     | __main__:main:1119 - ============================================================
+2026-02-12 10:07:23.951 | INFO     | __main__:main:1120 - Starting evaluation: Bootstrap Effect Sizes + Failure Taxonomy
+2026-02-12 10:07:23.951 | INFO     | __main__:main:1121 - ============================================================
+2026-02-12 10:07:23.951 | INFO     | __main__:load_iter4_data:103 - Loading iter4 data from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_4/gen_art/exp_id1_it4__opus/full_method_out.json
+2026-02-12 10:07:23.966 | INFO     | __main__:load_iter4_data:142 - Loaded 12 datasets, 1080 examples processed
+2026-02-12 10:07:23.966 | INFO     | __main__:load_analysis_metadata:148 - Loading analysis metadata from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_4/gen_art/exp_id1_it4__opus/analysis_metadata.json
+2026-02-12 10:07:23.967 | INFO     | __main__:load_analysis_metadata:150 - Loaded metadata: 12 datasets, 9 split inspections
+2026-02-12 10:07:23.967 | INFO     | __main__:load_iter2_synergy:159 - Loading iter2 synergy data from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus/full_method_out.json
+2026-02-12 10:07:24.009 | INFO     | __main__:load_iter2_synergy:176 - Loaded synergy data for 12 datasets
+2026-02-12 10:07:24.011 | INFO     | __main__:main:1141 - Datasets: ['australian', 'banknote', 'breast_cancer', 'credit_g', 'diabetes', 'glass', 'heart_statlog', 'ionosphere', 'segment', 'sonar', 'vehicle', 'wine']
+2026-02-12 10:07:24.011 | INFO     | __main__:main:1142 - Methods per dataset: ['FIGS', 'RO-FIGS', 'SG-FIGS-10', 'SG-FIGS-25', 'SG-FIGS-50', 'GradientBoosting']
+2026-02-12 10:07:24.011 | INFO     | __main__:module_a_bootstrap:189 - Module A: Computing bootstrap effect sizes
+2026-02-12 10:07:24.243 | INFO     | __main__:module_a_bootstrap:242 -   FIGS - RO-FIGS: Δ=0.0567, CI=[0.0166, 0.0956], includes_zero=False
+2026-02-12 10:07:24.457 | INFO     | __main__:module_a_bootstrap:242 -   FIGS - SG-FIGS-25: Δ=0.1033, CI=[0.0633, 0.1428], includes_zero=False
+2026-02-12 10:07:24.688 | INFO     | __main__:module_a_bootstrap:242 -   RO-FIGS - SG-FIGS-25: Δ=0.0466, CI=[0.0134, 0.0829], includes_zero=False
+2026-02-12 10:07:24.906 | INFO     | __main__:module_a_bootstrap:242 -   FIGS - SG-FIGS-10: Δ=0.0902, CI=[0.0541, 0.1262], includes_zero=False
+2026-02-12 10:07:25.142 | INFO     | __main__:module_a_bootstrap:242 -   FIGS - SG-FIGS-50: Δ=0.1248, CI=[0.0620, 0.1973], includes_zero=False
+2026-02-12 10:07:25.362 | INFO     | __main__:module_a_bootstrap:242 -   GradientBoosting - FIGS: Δ=0.0466, CI=[0.0354, 0.0583], includes_zero=False
+2026-02-12 10:07:25.362 | INFO     | __main__:module_b_failure_taxonomy:262 - Module B: Computing failure taxonomy
+2026-02-12 10:07:25.362 | INFO     | __main__:module_b_failure_taxonomy:321 -   australian: graph_too_sparse (FIGS-RO=+6.7pp, SG25-RO=+4.6pp)
+2026-02-12 10:07:25.363 | INFO     | __main__:module_b_failure_taxonomy:321 -   banknote: graph_too_sparse (FIGS-RO=+8.4pp, SG25-RO=-6.9pp)
+2026-02-12 10:07:25.363 | INFO     | __main__:module_b_failure_taxonomy:321 -   breast_cancer: synergy_neutral (FIGS-RO=+1.2pp, SG25-RO=-0.5pp)
+2026-02-12 10:07:25.363 | INFO     | __main__:module_b_failure_taxonomy:321 -   credit_g: synergy_harmful (FIGS-RO=+1.8pp, SG25-RO=-5.5pp)
+2026-02-12 10:07:25.363 | INFO     | __main__:module_b_failure_taxonomy:321 -   diabetes: synergy_neutral (FIGS-RO=+0.1pp, SG25-RO=-3.0pp)
+2026-02-12 10:07:25.363 | INFO     | __main__:module_b_failure_taxonomy:321 -   glass: graph_too_sparse (FIGS-RO=+6.0pp, SG25-RO=-11.7pp)
+2026-02-12 10:07:25.363 | INFO     | __main__:module_b_failure_taxonomy:321 -   heart_statlog: oblique_incompatible (FIGS-RO=+7.0pp, SG25-RO=-7.0pp)
+2026-02-12 10:07:25.364 | INFO     | __main__:module_b_failure_taxonomy:321 -   ionosphere: oblique_incompatible (FIGS-RO=+14.2pp, SG25-RO=+0.2pp)
+2026-02-12 10:07:25.364 | INFO     | __main__:module_b_failure_taxonomy:321 -   segment: graph_too_sparse (FIGS-RO=+14.9pp, SG25-RO=+3.4pp)
+2026-02-12 10:07:25.364 | INFO     | __main__:module_b_failure_taxonomy:321 -   sonar: synergy_harmful (FIGS-RO=-2.9pp, SG25-RO=-18.7pp)
+2026-02-12 10:07:25.364 | INFO     | __main__:module_b_failure_taxonomy:321 -   vehicle: oblique_incompatible (FIGS-RO=+17.4pp, SG25-RO=-4.7pp)
+2026-02-12 10:07:25.364 | INFO     | __main__:module_b_failure_taxonomy:321 -   wine: synergy_harmful (FIGS-RO=-6.7pp, SG25-RO=-6.2pp)
+2026-02-12 10:07:25.364 | INFO     | __main__:module_c_split_catalog:333 - Module C: Building split catalog
+2026-02-12 10:07:25.364 | INFO     | __main__:module_c_split_catalog:413 -   9 oblique + 81 axis-aligned = 90 total splits, activation rate = 10.0%
+2026-02-12 10:07:25.364 | INFO     | __main__:module_d_synergy_alignment:447 - Module D: Computing synergy alignment scores
+2026-02-12 10:07:25.365 | INFO     | __main__:module_d_synergy_alignment:524 -   diabetes_SG-FIGS-10: ρ=-0.5, top2_match=False
+2026-02-12 10:07:25.366 | INFO     | __main__:module_d_synergy_alignment:524 -   diabetes_SG-FIGS-25: ρ=-0.5, top2_match=False
+2026-02-12 10:07:25.367 | INFO     | __main__:module_d_synergy_alignment:524 -   diabetes_SG-FIGS-50: ρ=0.0, top2_match=False
+2026-02-12 10:07:25.367 | INFO     | __main__:module_d_synergy_alignment:524 -   heart_statlog_SG-FIGS-10: N/A (2 features), top2_match=True
+2026-02-12 10:07:25.367 | INFO     | __main__:module_d_synergy_alignment:524 -   heart_statlog_SG-FIGS-25: ρ=-0.7, top2_match=False
+2026-02-12 10:07:25.368 | INFO     | __main__:module_d_synergy_alignment:524 -   heart_statlog_SG-FIGS-50: ρ=-0.7, top2_match=False
+2026-02-12 10:07:25.369 | INFO     | __main__:module_d_synergy_alignment:524 -   breast_cancer_SG-FIGS-10: ρ=0.5, top2_match=False
+2026-02-12 10:07:25.369 | INFO     | __main__:module_d_synergy_alignment:524 -   breast_cancer_SG-FIGS-25: ρ=0.4, top2_match=False
+2026-02-12 10:07:25.370 | INFO     | __main__:module_d_synergy_alignment:524 -   breast_cancer_SG-FIGS-50: ρ=0.4, top2_match=False
+2026-02-12 10:07:25.370 | INFO     | __main__:module_e_success_verdicts:558 - Module E: Computing success criteria verdicts
+2026-02-12 10:07:25.370 | INFO     | __main__:module_e_success_verdicts:688 -   Accuracy parity with fewer splits: DISCONFIRMED
+2026-02-12 10:07:25.370 | INFO     | __main__:module_e_success_verdicts:688 -   Higher interpretability score: PARTIALLY_CONFIRMED
+2026-02-12 10:07:25.370 | INFO     | __main__:module_e_success_verdicts:688 -   Domain-meaningful splits on 3+ datasets: CONFIRMED
+2026-02-12 10:07:25.370 | INFO     | __main__:module_f_narrative:707 - Module F: Synthesizing paper narrative
+2026-02-12 10:07:25.370 | INFO     | __main__:format_output:867 - Formatting output to schema
+2026-02-12 10:07:25.372 | INFO     | __main__:main:1189 - Output saved to /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_6/gen_art/eval_id1_it6__opus/eval_out.json
+2026-02-12 10:07:25.372 | INFO     | __main__:main:1190 - Total datasets in output: 6
+2026-02-12 10:07:25.372 | INFO     | __main__:main:1192 - Total examples in output: 46
+2026-02-12 10:07:25.372 | INFO     | __main__:main:1193 - Aggregate metrics: {
+  "n_datasets": 12,
+  "n_bootstrap_comparisons": 6,
+  "n_ci_includes_zero": 0,
+  "n_ci_excludes_zero": 6,
+  "mean_figs_accuracy": 0.8117,
+  "mean_sg25_accuracy": 0.7083,
+  "mean_ro_figs_accuracy": 0.755,
+  "mean_gb_accuracy": 0.8583,
+  "oblique_activation_rate": 0.1,
+  "mean_synergy_alignment_rho": -0.1375,
+  "n_domain_meaningful_datasets": 1,
+  "n_graph_too_sparse": 4,
+  "n_oblique_incompatible": 3,
+  "n_synergy_harmful": 3,
+  "n_synergy_neutral": 2,
+  "n_synergy_beneficial": 0,
+  "total_oblique_splits": 9,
+  "total_axis_aligned_splits": 81
+}
+2026-02-12 10:07:25.372 | SUCCESS  | __main__:main:1194 - Evaluation complete!
+2026-02-12 10:07:46.661 | INFO     | __main__:main:1122 - ============================================================
+2026-02-12 10:07:46.662 | INFO     | __main__:main:1123 - Starting evaluation: Bootstrap Effect Sizes + Failure Taxonomy
+2026-02-12 10:07:46.662 | INFO     | __main__:main:1124 - ============================================================
+2026-02-12 10:07:46.662 | INFO     | __main__:load_iter4_data:103 - Loading iter4 data from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_4/gen_art/exp_id1_it4__opus/full_method_out.json
+2026-02-12 10:07:46.679 | INFO     | __main__:load_iter4_data:142 - Loaded 12 datasets, 1080 examples processed
+2026-02-12 10:07:46.680 | INFO     | __main__:load_analysis_metadata:148 - Loading analysis metadata from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_4/gen_art/exp_id1_it4__opus/analysis_metadata.json
+2026-02-12 10:07:46.681 | INFO     | __main__:load_analysis_metadata:150 - Loaded metadata: 12 datasets, 9 split inspections
+2026-02-12 10:07:46.681 | INFO     | __main__:load_iter2_synergy:159 - Loading iter2 synergy data from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus/full_method_out.json
+2026-02-12 10:07:46.735 | INFO     | __main__:load_iter2_synergy:176 - Loaded synergy data for 12 datasets
+2026-02-12 10:07:46.738 | INFO     | __main__:main:1144 - Datasets: ['australian', 'banknote', 'breast_cancer', 'credit_g', 'diabetes', 'glass', 'heart_statlog', 'ionosphere', 'segment', 'sonar', 'vehicle', 'wine']
+2026-02-12 10:07:46.739 | INFO     | __main__:main:1145 - Methods per dataset: ['FIGS', 'RO-FIGS', 'SG-FIGS-10', 'SG-FIGS-25', 'SG-FIGS-50', 'GradientBoosting']
+2026-02-12 10:07:46.739 | INFO     | __main__:module_a_bootstrap:189 - Module A: Computing bootstrap effect sizes
+2026-02-12 10:07:46.994 | INFO     | __main__:module_a_bootstrap:242 -   FIGS - RO-FIGS: Δ=0.0567, CI=[0.0166, 0.0956], includes_zero=False
+2026-02-12 10:07:47.241 | INFO     | __main__:module_a_bootstrap:242 -   FIGS - SG-FIGS-25: Δ=0.1033, CI=[0.0633, 0.1428], includes_zero=False
+2026-02-12 10:07:47.519 | INFO     | __main__:module_a_bootstrap:242 -   RO-FIGS - SG-FIGS-25: Δ=0.0466, CI=[0.0134, 0.0829], includes_zero=False
+2026-02-12 10:07:47.765 | INFO     | __main__:module_a_bootstrap:242 -   FIGS - SG-FIGS-10: Δ=0.0902, CI=[0.0541, 0.1262], includes_zero=False
+2026-02-12 10:07:48.050 | INFO     | __main__:module_a_bootstrap:242 -   FIGS - SG-FIGS-50: Δ=0.1248, CI=[0.0620, 0.1973], includes_zero=False
+2026-02-12 10:07:48.321 | INFO     | __main__:module_a_bootstrap:242 -   GradientBoosting - FIGS: Δ=0.0466, CI=[0.0354, 0.0583], includes_zero=False
+2026-02-12 10:07:48.322 | INFO     | __main__:module_b_failure_taxonomy:262 - Module B: Computing failure taxonomy
+2026-02-12 10:07:48.323 | INFO     | __main__:module_b_failure_taxonomy:321 -   australian: graph_too_sparse (FIGS-RO=+6.7pp, SG25-RO=+4.6pp)
+2026-02-12 10:07:48.324 | INFO     | __main__:module_b_failure_taxonomy:321 -   banknote: graph_too_sparse (FIGS-RO=+8.4pp, SG25-RO=-6.9pp)
+2026-02-12 10:07:48.324 | INFO     | __main__:module_b_failure_taxonomy:321 -   breast_cancer: synergy_neutral (FIGS-RO=+1.2pp, SG25-RO=-0.5pp)
+2026-02-12 10:07:48.325 | INFO     | __main__:module_b_failure_taxonomy:321 -   credit_g: synergy_harmful (FIGS-RO=+1.8pp, SG25-RO=-5.5pp)
+2026-02-12 10:07:48.325 | INFO     | __main__:module_b_failure_taxonomy:321 -   diabetes: synergy_neutral (FIGS-RO=+0.1pp, SG25-RO=-3.0pp)
+2026-02-12 10:07:48.326 | INFO     | __main__:module_b_failure_taxonomy:321 -   glass: graph_too_sparse (FIGS-RO=+6.0pp, SG25-RO=-11.7pp)
+2026-02-12 10:07:48.326 | INFO     | __main__:module_b_failure_taxonomy:321 -   heart_statlog: oblique_incompatible (FIGS-RO=+7.0pp, SG25-RO=-7.0pp)
+2026-02-12 10:07:48.327 | INFO     | __main__:module_b_failure_taxonomy:321 -   ionosphere: oblique_incompatible (FIGS-RO=+14.2pp, SG25-RO=+0.2pp)
+2026-02-12 10:07:48.327 | INFO     | __main__:module_b_failure_taxonomy:321 -   segment: graph_too_sparse (FIGS-RO=+14.9pp, SG25-RO=+3.4pp)
+2026-02-12 10:07:48.327 | INFO     | __main__:module_b_failure_taxonomy:321 -   sonar: synergy_harmful (FIGS-RO=-2.9pp, SG25-RO=-18.7pp)
+2026-02-12 10:07:48.327 | INFO     | __main__:module_b_failure_taxonomy:321 -   vehicle: oblique_incompatible (FIGS-RO=+17.4pp, SG25-RO=-4.7pp)
+2026-02-12 10:07:48.328 | INFO     | __main__:module_b_failure_taxonomy:321 -   wine: synergy_harmful (FIGS-RO=-6.7pp, SG25-RO=-6.2pp)
+2026-02-12 10:07:48.328 | INFO     | __main__:module_c_split_catalog:333 - Module C: Building split catalog
+2026-02-12 10:07:48.329 | INFO     | __main__:module_c_split_catalog:413 -   9 oblique + 81 axis-aligned = 90 total splits, activation rate = 10.0%
+2026-02-12 10:07:48.329 | INFO     | __main__:module_d_synergy_alignment:447 - Module D: Computing synergy alignment scores
+2026-02-12 10:07:48.332 | INFO     | __main__:module_d_synergy_alignment:524 -   diabetes_SG-FIGS-10: ρ=-0.5, top2_match=False
+2026-02-12 10:07:48.334 | INFO     | __main__:module_d_synergy_alignment:524 -   diabetes_SG-FIGS-25: ρ=-0.5, top2_match=False
+2026-02-12 10:07:48.336 | INFO     | __main__:module_d_synergy_alignment:524 -   diabetes_SG-FIGS-50: ρ=0.0, top2_match=False
+2026-02-12 10:07:48.336 | INFO     | __main__:module_d_synergy_alignment:524 -   heart_statlog_SG-FIGS-10: N/A (2 features), top2_match=True
+2026-02-12 10:07:48.338 | INFO     | __main__:module_d_synergy_alignment:524 -   heart_statlog_SG-FIGS-25: ρ=-0.7, top2_match=False
+2026-02-12 10:07:48.339 | INFO     | __main__:module_d_synergy_alignment:524 -   heart_statlog_SG-FIGS-50: ρ=-0.7, top2_match=False
+2026-02-12 10:07:48.342 | INFO     | __main__:module_d_synergy_alignment:524 -   breast_cancer_SG-FIGS-10: ρ=0.5, top2_match=False
+2026-02-12 10:07:48.343 | INFO     | __main__:module_d_synergy_alignment:524 -   breast_cancer_SG-FIGS-25: ρ=0.4, top2_match=False
+2026-02-12 10:07:48.344 | INFO     | __main__:module_d_synergy_alignment:524 -   breast_cancer_SG-FIGS-50: ρ=0.4, top2_match=False
+2026-02-12 10:07:48.344 | INFO     | __main__:module_e_success_verdicts:558 - Module E: Computing success criteria verdicts
+2026-02-12 10:07:48.345 | INFO     | __main__:module_e_success_verdicts:688 -   Accuracy parity with fewer splits: DISCONFIRMED
+2026-02-12 10:07:48.346 | INFO     | __main__:module_e_success_verdicts:688 -   Higher interpretability score: PARTIALLY_CONFIRMED
+2026-02-12 10:07:48.346 | INFO     | __main__:module_e_success_verdicts:688 -   Domain-meaningful splits on 3+ datasets: CONFIRMED
+2026-02-12 10:07:48.346 | INFO     | __main__:module_f_narrative:707 - Module F: Synthesizing paper narrative
+2026-02-12 10:07:48.346 | INFO     | __main__:format_output:867 - Formatting output to schema
+2026-02-12 10:07:48.350 | INFO     | __main__:main:1192 - Output saved to /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_6/gen_art/eval_id1_it6__opus/eval_out.json
+2026-02-12 10:07:48.350 | INFO     | __main__:main:1193 - Total datasets in output: 6
+2026-02-12 10:07:48.350 | INFO     | __main__:main:1195 - Total examples in output: 46
+2026-02-12 10:07:48.350 | INFO     | __main__:main:1196 - Aggregate metrics: {
+  "n_datasets": 12,
+  "n_bootstrap_comparisons": 6,
+  "n_ci_includes_zero": 0,
+  "n_ci_excludes_zero": 6,
+  "mean_figs_accuracy": 0.8117,
+  "mean_sg25_accuracy": 0.7083,
+  "mean_ro_figs_accuracy": 0.755,
+  "mean_gb_accuracy": 0.8583,
+  "oblique_activation_rate": 0.1,
+  "mean_synergy_alignment_rho": -0.1375,
+  "n_domain_meaningful_datasets": 3,
+  "n_graph_too_sparse": 4,
+  "n_oblique_incompatible": 3,
+  "n_synergy_harmful": 3,
+  "n_synergy_neutral": 2,
+  "n_synergy_beneficial": 0,
+  "total_oblique_splits": 9,
+  "total_axis_aligned_splits": 81
+}
+2026-02-12 10:07:48.350 | SUCCESS  | __main__:main:1197 - Evaluation complete!

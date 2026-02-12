@@ -1,0 +1,130 @@
+2026-02-12 10:06:01.376 | INFO     | __main__:main:264 - ============================================================
+2026-02-12 10:06:01.377 | INFO     | __main__:main:265 - Information-Theoretic Split Quality Audit
+2026-02-12 10:06:01.377 | INFO     | __main__:main:266 - ============================================================
+2026-02-12 10:06:01.377 | INFO     | __main__:load_json:81 - Loading full_method_out.json (1121.2 KB)
+2026-02-12 10:06:01.391 | INFO     | __main__:load_json:81 - Loading full_method_out.json (4127.4 KB)
+2026-02-12 10:06:01.440 | INFO     | __main__:load_json:81 - Loading analysis_metadata.json (53.7 KB)
+2026-02-12 10:06:01.462 | INFO     | __main__:main:278 - Built synergy lookup for 12 datasets
+2026-02-12 10:06:01.463 | INFO     | __main__:main:280 -   banknote-authentication: 6 feature pairs
+2026-02-12 10:06:01.463 | INFO     | __main__:main:280 -   diabetes: 28 feature pairs
+2026-02-12 10:06:01.464 | INFO     | __main__:main:280 -   glass: 36 feature pairs
+2026-02-12 10:06:01.464 | INFO     | __main__:main:280 -   wine: 78 feature pairs
+2026-02-12 10:06:01.464 | INFO     | __main__:main:280 -   heart-statlog: 78 feature pairs
+2026-02-12 10:06:01.465 | INFO     | __main__:main:280 -   australian: 91 feature pairs
+2026-02-12 10:06:01.465 | INFO     | __main__:main:280 -   vehicle: 153 feature pairs
+2026-02-12 10:06:01.465 | INFO     | __main__:main:280 -   segment: 171 feature pairs
+2026-02-12 10:06:01.466 | INFO     | __main__:main:280 -   credit_g: 190 feature pairs
+2026-02-12 10:06:01.466 | INFO     | __main__:main:280 -   breast_cancer_wisconsin: 435 feature pairs
+2026-02-12 10:06:01.467 | INFO     | __main__:main:280 -   ionosphere: 561 feature pairs
+2026-02-12 10:06:01.468 | INFO     | __main__:main:280 -   sonar: 1770 feature pairs
+2026-02-12 10:06:01.468 | INFO     | __main__:main:284 - Found 9 split inspection entries
+2026-02-12 10:06:01.469 | INFO     | __main__:main:310 - Processing: diabetes / SG-FIGS-10
+2026-02-12 10:06:01.469 | INFO     | __main__:main:462 -   Split tree=0, features=['plas', 'mass', 'age']: SCR=2.545, above_med=1.000, imp_ratio=0.115, red_ratio=2.722
+2026-02-12 10:06:01.470 | INFO     | __main__:main:310 - Processing: diabetes / SG-FIGS-25
+2026-02-12 10:06:01.471 | INFO     | __main__:main:462 -   Split tree=0, features=['plas', 'mass', 'age']: SCR=2.545, above_med=1.000, imp_ratio=0.115, red_ratio=2.722
+2026-02-12 10:06:01.471 | INFO     | __main__:main:310 - Processing: diabetes / SG-FIGS-50
+2026-02-12 10:06:01.471 | INFO     | __main__:main:462 -   Split tree=0, features=['preg', 'plas', 'mass', 'age']: SCR=1.979, above_med=1.000, imp_ratio=0.076, red_ratio=2.173
+2026-02-12 10:06:01.472 | INFO     | __main__:main:310 - Processing: heart_statlog / SG-FIGS-10
+2026-02-12 10:06:01.472 | INFO     | __main__:main:462 -   Split tree=0, features=['number_of_major_vessels', 'thal']: SCR=5.491, above_med=1.000, imp_ratio=0.102, red_ratio=0.000
+2026-02-12 10:06:01.473 | INFO     | __main__:main:310 - Processing: heart_statlog / SG-FIGS-25
+2026-02-12 10:06:01.473 | INFO     | __main__:main:462 -   Split tree=0, features=['age', 'maximum_heart_rate_achieved', 'oldpeak', 'number_of_major_vessels', 'thal']: SCR=4.236, above_med=1.000, imp_ratio=0.086, red_ratio=3.092
+2026-02-12 10:06:01.473 | INFO     | __main__:main:310 - Processing: heart_statlog / SG-FIGS-50
+2026-02-12 10:06:01.473 | INFO     | __main__:main:462 -   Split tree=0, features=['thal', 'number_of_major_vessels', 'age', 'maximum_heart_rate_achieved', 'oldpeak']: SCR=4.236, above_med=1.000, imp_ratio=0.011, red_ratio=3.092
+2026-02-12 10:06:01.474 | INFO     | __main__:main:310 - Processing: breast_cancer / SG-FIGS-10
+2026-02-12 10:06:01.474 | WARNING  | __main__:main:318 -   No synergy data for breast-cancer, skipping
+2026-02-12 10:06:01.474 | INFO     | __main__:main:310 - Processing: breast_cancer / SG-FIGS-25
+2026-02-12 10:06:01.474 | WARNING  | __main__:main:318 -   No synergy data for breast-cancer, skipping
+2026-02-12 10:06:01.474 | INFO     | __main__:main:310 - Processing: breast_cancer / SG-FIGS-50
+2026-02-12 10:06:01.474 | WARNING  | __main__:main:318 -   No synergy data for breast-cancer, skipping
+2026-02-12 10:06:01.475 | INFO     | __main__:main:571 - ============================================================
+2026-02-12 10:06:01.475 | INFO     | __main__:main:572 - AGGREGATE RESULTS
+2026-02-12 10:06:01.475 | INFO     | __main__:main:573 - ============================================================
+2026-02-12 10:06:01.475 | INFO     | __main__:main:575 -   mean_scr: 3.5054
+2026-02-12 10:06:01.475 | INFO     | __main__:main:575 -   std_scr: 1.355144
+2026-02-12 10:06:01.475 | INFO     | __main__:main:575 -   n_oblique_splits_evaluated: 6
+2026-02-12 10:06:01.475 | INFO     | __main__:main:575 -   mean_above_median_fraction: 1.0
+2026-02-12 10:06:01.475 | INFO     | __main__:main:575 -   std_above_median_fraction: 0.0
+2026-02-12 10:06:01.475 | INFO     | __main__:main:575 -   expected_random_above_median: 0.5
+2026-02-12 10:06:01.475 | INFO     | __main__:main:575 -   mean_impurity_per_feature_ratio: 0.084183
+2026-02-12 10:06:01.475 | INFO     | __main__:main:575 -   std_impurity_per_feature_ratio: 0.039307
+2026-02-12 10:06:01.475 | INFO     | __main__:main:575 -   mean_redundancy_ratio: 2.300226
+2026-02-12 10:06:01.475 | INFO     | __main__:main:575 -   std_redundancy_ratio: 1.176139
+2026-02-12 10:06:01.476 | INFO     | __main__:main:575 -   mean_joint_mi_ratio: 2.559708
+2026-02-12 10:06:01.476 | INFO     | __main__:main:575 -   std_joint_mi_ratio: 1.360165
+2026-02-12 10:06:01.476 | INFO     | __main__:main:575 -   mean_synergy_weighted_efficiency: 0.025189
+2026-02-12 10:06:01.476 | INFO     | __main__:main:575 -   std_synergy_weighted_efficiency: 0.011764
+2026-02-12 10:06:01.476 | INFO     | __main__:main:575 -   n_datasets_with_oblique_splits: 2
+2026-02-12 10:06:01.476 | INFO     | __main__:main:575 -   total_examples: 96
+2026-02-12 10:06:01.480 | INFO     | __main__:main:587 - Wrote /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_6/gen_art/eval_id3_it6__opus/eval_out.json (81.5 KB)
+2026-02-12 10:06:01.480 | INFO     | __main__:main:590 - ============================================================
+2026-02-12 10:06:01.480 | INFO     | __main__:main:591 - INTERPRETATION SUMMARY
+2026-02-12 10:06:01.481 | INFO     | __main__:main:592 - ============================================================
+2026-02-12 10:06:01.481 | INFO     | __main__:main:594 - SCR = 3.505 (> 1: splits concentrate high-synergy pairs)
+2026-02-12 10:06:01.481 | INFO     | __main__:main:598 - Above-median fraction = 1.000 (random baseline = 0.5, better than random)
+2026-02-12 10:06:01.481 | INFO     | __main__:main:603 - Impurity/feature ratio = 0.084 (oblique splits LESS efficient per feature than best axis-aligned)
+2026-02-12 10:06:01.481 | INFO     | __main__:main:608 - Redundancy ratio = 2.300 (higher than random: features overlap)
+2026-02-12 10:06:16.518 | INFO     | __main__:main:264 - ============================================================
+2026-02-12 10:06:16.518 | INFO     | __main__:main:265 - Information-Theoretic Split Quality Audit
+2026-02-12 10:06:16.518 | INFO     | __main__:main:266 - ============================================================
+2026-02-12 10:06:16.518 | INFO     | __main__:load_json:81 - Loading full_method_out.json (1121.2 KB)
+2026-02-12 10:06:16.530 | INFO     | __main__:load_json:81 - Loading full_method_out.json (4127.4 KB)
+2026-02-12 10:06:16.577 | INFO     | __main__:load_json:81 - Loading analysis_metadata.json (53.7 KB)
+2026-02-12 10:06:16.598 | INFO     | __main__:main:278 - Built synergy lookup for 12 datasets
+2026-02-12 10:06:16.598 | INFO     | __main__:main:280 -   banknote-authentication: 6 feature pairs
+2026-02-12 10:06:16.598 | INFO     | __main__:main:280 -   diabetes: 28 feature pairs
+2026-02-12 10:06:16.598 | INFO     | __main__:main:280 -   glass: 36 feature pairs
+2026-02-12 10:06:16.598 | INFO     | __main__:main:280 -   wine: 78 feature pairs
+2026-02-12 10:06:16.598 | INFO     | __main__:main:280 -   heart-statlog: 78 feature pairs
+2026-02-12 10:06:16.598 | INFO     | __main__:main:280 -   australian: 91 feature pairs
+2026-02-12 10:06:16.598 | INFO     | __main__:main:280 -   vehicle: 153 feature pairs
+2026-02-12 10:06:16.599 | INFO     | __main__:main:280 -   segment: 171 feature pairs
+2026-02-12 10:06:16.599 | INFO     | __main__:main:280 -   credit_g: 190 feature pairs
+2026-02-12 10:06:16.599 | INFO     | __main__:main:280 -   breast_cancer_wisconsin: 435 feature pairs
+2026-02-12 10:06:16.599 | INFO     | __main__:main:280 -   ionosphere: 561 feature pairs
+2026-02-12 10:06:16.599 | INFO     | __main__:main:280 -   sonar: 1770 feature pairs
+2026-02-12 10:06:16.599 | INFO     | __main__:main:284 - Found 9 split inspection entries
+2026-02-12 10:06:16.599 | INFO     | __main__:main:310 - Processing: diabetes / SG-FIGS-10
+2026-02-12 10:06:16.599 | INFO     | __main__:main:462 -   Split tree=0, features=['plas', 'mass', 'age']: SCR=2.545, above_med=1.000, imp_ratio=0.115, red_ratio=2.722
+2026-02-12 10:06:16.600 | INFO     | __main__:main:310 - Processing: diabetes / SG-FIGS-25
+2026-02-12 10:06:16.600 | INFO     | __main__:main:462 -   Split tree=0, features=['plas', 'mass', 'age']: SCR=2.545, above_med=1.000, imp_ratio=0.115, red_ratio=2.722
+2026-02-12 10:06:16.601 | INFO     | __main__:main:310 - Processing: diabetes / SG-FIGS-50
+2026-02-12 10:06:16.601 | INFO     | __main__:main:462 -   Split tree=0, features=['preg', 'plas', 'mass', 'age']: SCR=1.979, above_med=1.000, imp_ratio=0.076, red_ratio=2.173
+2026-02-12 10:06:16.602 | INFO     | __main__:main:310 - Processing: heart_statlog / SG-FIGS-10
+2026-02-12 10:06:16.602 | INFO     | __main__:main:462 -   Split tree=0, features=['number_of_major_vessels', 'thal']: SCR=5.491, above_med=1.000, imp_ratio=0.102, red_ratio=0.000
+2026-02-12 10:06:16.603 | INFO     | __main__:main:310 - Processing: heart_statlog / SG-FIGS-25
+2026-02-12 10:06:16.603 | INFO     | __main__:main:462 -   Split tree=0, features=['age', 'maximum_heart_rate_achieved', 'oldpeak', 'number_of_major_vessels', 'thal']: SCR=4.236, above_med=1.000, imp_ratio=0.086, red_ratio=3.092
+2026-02-12 10:06:16.604 | INFO     | __main__:main:310 - Processing: heart_statlog / SG-FIGS-50
+2026-02-12 10:06:16.604 | INFO     | __main__:main:462 -   Split tree=0, features=['thal', 'number_of_major_vessels', 'age', 'maximum_heart_rate_achieved', 'oldpeak']: SCR=4.236, above_med=1.000, imp_ratio=0.011, red_ratio=3.092
+2026-02-12 10:06:16.605 | INFO     | __main__:main:310 - Processing: breast_cancer / SG-FIGS-10
+2026-02-12 10:06:16.606 | INFO     | __main__:main:462 -   Split tree=0, features=['worst radius', 'worst smoothness', 'worst concave points']: SCR=1.615, above_med=0.667, imp_ratio=2.447, red_ratio=1.792
+2026-02-12 10:06:16.607 | INFO     | __main__:main:310 - Processing: breast_cancer / SG-FIGS-25
+2026-02-12 10:06:16.607 | INFO     | __main__:main:462 -   Split tree=0, features=['worst radius', 'worst smoothness', 'worst concave points', 'worst concavity', 'mean concavity']: SCR=1.285, above_med=0.600, imp_ratio=3.363, red_ratio=2.089
+2026-02-12 10:06:16.608 | INFO     | __main__:main:310 - Processing: breast_cancer / SG-FIGS-50
+2026-02-12 10:06:16.609 | INFO     | __main__:main:462 -   Split tree=0, features=['worst radius', 'worst smoothness', 'worst concave points', 'worst concavity', 'mean concavity']: SCR=1.285, above_med=0.600, imp_ratio=3.363, red_ratio=2.089
+2026-02-12 10:06:16.610 | INFO     | __main__:main:571 - ============================================================
+2026-02-12 10:06:16.610 | INFO     | __main__:main:572 - AGGREGATE RESULTS
+2026-02-12 10:06:16.610 | INFO     | __main__:main:573 - ============================================================
+2026-02-12 10:06:16.610 | INFO     | __main__:main:575 -   mean_scr: 2.801882
+2026-02-12 10:06:16.610 | INFO     | __main__:main:575 -   std_scr: 1.506815
+2026-02-12 10:06:16.610 | INFO     | __main__:main:575 -   n_oblique_splits_evaluated: 9
+2026-02-12 10:06:16.610 | INFO     | __main__:main:575 -   mean_above_median_fraction: 0.874074
+2026-02-12 10:06:16.610 | INFO     | __main__:main:575 -   std_above_median_fraction: 0.189867
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   expected_random_above_median: 0.5
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   mean_impurity_per_feature_ratio: 1.075447
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   std_impurity_per_feature_ratio: 1.510549
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   mean_redundancy_ratio: 2.196955
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   std_redundancy_ratio: 0.94653
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   mean_joint_mi_ratio: 2.458319
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   std_joint_mi_ratio: 1.128366
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   mean_synergy_weighted_efficiency: 0.443238
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   std_synergy_weighted_efficiency: 0.657061
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   n_datasets_with_oblique_splits: 3
+2026-02-12 10:06:16.611 | INFO     | __main__:main:575 -   total_examples: 144
+2026-02-12 10:06:16.617 | INFO     | __main__:main:587 - Wrote /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_6/gen_art/eval_id3_it6__opus/eval_out.json (122.2 KB)
+2026-02-12 10:06:16.617 | INFO     | __main__:main:590 - ============================================================
+2026-02-12 10:06:16.617 | INFO     | __main__:main:591 - INTERPRETATION SUMMARY
+2026-02-12 10:06:16.618 | INFO     | __main__:main:592 - ============================================================
+2026-02-12 10:06:16.618 | INFO     | __main__:main:594 - SCR = 2.802 (> 1: splits concentrate high-synergy pairs)
+2026-02-12 10:06:16.618 | INFO     | __main__:main:598 - Above-median fraction = 0.874 (random baseline = 0.5, better than random)
+2026-02-12 10:06:16.618 | INFO     | __main__:main:603 - Impurity/feature ratio = 1.075 (oblique splits MORE efficient per feature)
+2026-02-12 10:06:16.618 | INFO     | __main__:main:608 - Redundancy ratio = 2.197 (higher than random: features overlap)

@@ -1,0 +1,78 @@
+2026-02-12 10:06:36.029 | INFO     | __main__:main:1043 - ============================================================
+2026-02-12 10:06:36.030 | INFO     | __main__:main:1044 - Starting Synergy Graph Sufficiency Analysis
+2026-02-12 10:06:36.030 | INFO     | __main__:main:1045 - ============================================================
+2026-02-12 10:06:36.030 | INFO     | __main__:load_iter4_data:168 - Loading iter4 data from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_4/gen_art/exp_id1_it4__opus/full_method_out.json
+2026-02-12 10:06:36.041 | INFO     | __main__:load_iter4_data:170 - Loaded 12 datasets from iter4
+2026-02-12 10:06:36.042 | INFO     | __main__:load_iter2_data:176 - Loading iter2 data from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus/full_method_out.json
+2026-02-12 10:06:36.076 | INFO     | __main__:load_iter2_data:178 - Loaded 12 datasets from iter2
+2026-02-12 10:06:36.076 | INFO     | __main__:load_analysis_metadata:184 - Loading analysis metadata from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_4/gen_art/exp_id1_it4__opus/analysis_metadata.json
+2026-02-12 10:06:36.078 | INFO     | __main__:main:1080 - Found 12 datasets: ['australian', 'banknote', 'breast_cancer', 'credit_g', 'diabetes', 'glass', 'heart_statlog', 'ionosphere', 'segment', 'sonar', 'vehicle', 'wine']
+2026-02-12 10:06:36.078 | INFO     | __main__:compute_graph_density:231 - Computing Metric 1: Graph Density vs. Accuracy Gap Correlation
+2026-02-12 10:06:36.078 | INFO     | __main__:compute_graph_density:298 -   australian: density=0.2527, acc_gap=0.0203, edges=23.0/91
+2026-02-12 10:06:36.078 | INFO     | __main__:compute_graph_density:298 -   banknote: density=0.3333, acc_gap=0.1524, edges=2.0/6
+2026-02-12 10:06:36.078 | INFO     | __main__:compute_graph_density:298 -   breast_cancer: density=0.2506, acc_gap=0.0175, edges=109.0/435
+2026-02-12 10:06:36.078 | INFO     | __main__:compute_graph_density:298 -   credit_g: density=0.2526, acc_gap=0.0730, edges=48.0/190
+2026-02-12 10:06:36.078 | INFO     | __main__:compute_graph_density:298 -   diabetes: density=0.2500, acc_gap=0.0313, edges=7.0/28
+2026-02-12 10:06:36.078 | INFO     | __main__:compute_graph_density:298 -   glass: density=0.2500, acc_gap=0.1772, edges=9.0/36
+2026-02-12 10:06:36.079 | INFO     | __main__:compute_graph_density:298 -   heart_statlog: density=0.2564, acc_gap=0.1407, edges=20.0/78
+2026-02-12 10:06:36.079 | INFO     | __main__:compute_graph_density:298 -   ionosphere: density=0.2513, acc_gap=0.1396, edges=141.0/561
+2026-02-12 10:06:36.079 | INFO     | __main__:compute_graph_density:298 -   segment: density=0.2515, acc_gap=0.1152, edges=43.0/171
+2026-02-12 10:06:36.079 | INFO     | __main__:compute_graph_density:298 -   sonar: density=0.2458, acc_gap=0.1578, edges=435.0/1770
+2026-02-12 10:06:36.079 | INFO     | __main__:compute_graph_density:298 -   vehicle: density=0.2549, acc_gap=0.2211, edges=39.0/153
+2026-02-12 10:06:36.079 | INFO     | __main__:compute_graph_density:298 -   wine: density=0.2564, acc_gap=-0.0059, edges=20.0/78
+2026-02-12 10:06:36.079 | INFO     | __main__:compute_graph_density:305 -   Spearman rho=-0.0772, p=0.806582
+2026-02-12 10:06:36.079 | INFO     | __main__:compute_threshold_sensitivity:333 - Computing Metric 2: Threshold Sensitivity Profile
+2026-02-12 10:06:36.079 | INFO     | __main__:compute_threshold_sensitivity:398 -   australian: SG10=0.8275, SG25=0.8304, SG50=0.7942, FIGS=0.8507 -> monotonic_worsening
+2026-02-12 10:06:36.079 | INFO     | __main__:compute_threshold_sensitivity:398 -   banknote: SG10=0.8382, SG25=0.8083, SG50=0.8790, FIGS=0.9606 -> non_monotonic
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:398 -   breast_cancer: SG10=0.9138, SG25=0.9052, SG50=0.9420, FIGS=0.9227 -> non_monotonic
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:398 -   credit_g: SG10=0.7390, SG25=0.6560, SG50=0.6930, FIGS=0.7290 -> non_monotonic
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:398 -   diabetes: SG10=0.6096, SG25=0.6874, SG50=0.5779, FIGS=0.7187 -> non_monotonic
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:398 -   glass: SG10=0.5987, SG25=0.5145, SG50=0.5751, FIGS=0.6917 -> non_monotonic
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:398 -   heart_statlog: SG10=0.5852, SG25=0.6259, SG50=0.4333, FIGS=0.7667 -> non_monotonic
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:398 -   ionosphere: SG10=0.8181, SG25=0.7493, SG50=0.8150, FIGS=0.8889 -> non_monotonic
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:398 -   segment: SG10=0.7866, SG25=0.8143, SG50=0.5442, FIGS=0.9294 -> non_monotonic
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:398 -   sonar: SG10=0.5821, SG25=0.5870, SG50=0.5821, FIGS=0.7448 -> flat
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:398 -   vehicle: SG10=0.5165, SG25=0.4562, SG50=0.5308, FIGS=0.6773 -> non_monotonic
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:398 -   wine: SG10=0.8429, SG25=0.8654, SG50=0.8759, FIGS=0.8595 -> monotonic_improving
+2026-02-12 10:06:36.080 | INFO     | __main__:compute_threshold_sensitivity:403 -   Profile distribution: {'monotonic_improving': 1, 'monotonic_worsening': 1, 'non_monotonic': 9, 'flat': 1}
+2026-02-12 10:06:36.081 | INFO     | __main__:compute_oblique_activation_rate:428 - Computing Metric 3: Oblique Activation Rate vs. Accuracy
+2026-02-12 10:06:36.081 | INFO     | __main__:compute_oblique_activation_rate:496 -   Pearson r=-0.2911, p=0.076059
+2026-02-12 10:06:36.081 | INFO     | __main__:compute_oblique_activation_rate:497 -   Zero-oblique datasets: ['australian', 'banknote', 'glass', 'segment']
+2026-02-12 10:06:36.081 | INFO     | __main__:compute_oblique_activation_rate:498 -   Nonzero-oblique datasets: ['breast_cancer', 'credit_g', 'diabetes', 'heart_statlog', 'ionosphere', 'sonar', 'vehicle', 'wine']
+2026-02-12 10:06:36.081 | INFO     | __main__:compute_oblique_activation_rate:499 -   Mean acc (zero oblique): 0.7419
+2026-02-12 10:06:36.081 | INFO     | __main__:compute_oblique_activation_rate:500 -   Mean acc (nonzero oblique): 0.6915
+2026-02-12 10:06:36.081 | INFO     | __main__:compute_sparse_graph_correction:530 - Computing Metric 4: Sparse Graph Correction Counterfactual
+2026-02-12 10:06:36.082 | INFO     | __main__:compute_sparse_graph_correction:587 -   australian: zero-oblique, max_discrepancy=0.07246377, identical=False
+2026-02-12 10:06:36.082 | INFO     | __main__:compute_sparse_graph_correction:587 -   banknote: zero-oblique, max_discrepancy=0.30291971, identical=False
+2026-02-12 10:06:36.082 | INFO     | __main__:compute_sparse_graph_correction:587 -   glass: zero-oblique, max_discrepancy=0.25581395, identical=False
+2026-02-12 10:06:36.082 | INFO     | __main__:compute_sparse_graph_correction:587 -   segment: zero-oblique, max_discrepancy=0.37662338, identical=False
+2026-02-12 10:06:36.082 | INFO     | __main__:compute_stability_performance:622 - Computing Metric 5: Stability-Performance Relationship
+2026-02-12 10:06:36.082 | INFO     | __main__:compute_stability_performance:668 -   australian: jaccard=0.7196, acc_gap=0.0203
+2026-02-12 10:06:36.082 | INFO     | __main__:compute_stability_performance:668 -   banknote: jaccard=1.0000, acc_gap=0.1524
+2026-02-12 10:06:36.082 | INFO     | __main__:compute_stability_performance:668 -   breast_cancer: jaccard=0.7065, acc_gap=0.0175
+2026-02-12 10:06:36.082 | INFO     | __main__:compute_stability_performance:668 -   credit_g: jaccard=0.5991, acc_gap=0.0730
+2026-02-12 10:06:36.082 | INFO     | __main__:compute_stability_performance:668 -   diabetes: jaccard=0.4940, acc_gap=0.0313
+2026-02-12 10:06:36.083 | INFO     | __main__:compute_stability_performance:668 -   glass: jaccard=0.5227, acc_gap=0.1772
+2026-02-12 10:06:36.083 | INFO     | __main__:compute_stability_performance:668 -   heart_statlog: jaccard=0.6591, acc_gap=0.1407
+2026-02-12 10:06:36.083 | INFO     | __main__:compute_stability_performance:668 -   ionosphere: jaccard=0.3747, acc_gap=0.1396
+2026-02-12 10:06:36.083 | INFO     | __main__:compute_stability_performance:668 -   segment: jaccard=0.9504, acc_gap=0.1152
+2026-02-12 10:06:36.083 | INFO     | __main__:compute_stability_performance:668 -   sonar: jaccard=0.2485, acc_gap=0.1578
+2026-02-12 10:06:36.083 | INFO     | __main__:compute_stability_performance:668 -   vehicle: jaccard=0.6608, acc_gap=0.2211
+2026-02-12 10:06:36.083 | INFO     | __main__:compute_stability_performance:668 -   wine: jaccard=0.4379, acc_gap=-0.0059
+2026-02-12 10:06:36.083 | INFO     | __main__:compute_stability_performance:673 -   Spearman rho=-0.0350, p=0.911904
+2026-02-12 10:06:36.083 | INFO     | __main__:compute_additional_metrics:704 - Computing additional metrics
+2026-02-12 10:06:36.084 | INFO     | __main__:build_eval_output:800 - Building evaluation output in exp_eval_sol_out schema format
+2026-02-12 10:06:36.087 | INFO     | __main__:main:1135 - Saved evaluation output to /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_6/gen_art/eval_id2_it6__opus/eval_out.json
+2026-02-12 10:06:36.087 | INFO     | __main__:main:1138 - ============================================================
+2026-02-12 10:06:36.087 | INFO     | __main__:main:1139 - EVALUATION SUMMARY
+2026-02-12 10:06:36.087 | INFO     | __main__:main:1140 - ============================================================
+2026-02-12 10:06:36.087 | INFO     | __main__:main:1141 - Metric 1 (Density-Gap Correlation): rho=-0.0772, p=0.806582
+2026-02-12 10:06:36.087 | INFO     | __main__:main:1142 -   No significant correlation between graph density and accuracy gap
+2026-02-12 10:06:36.087 | INFO     | __main__:main:1143 - Metric 2 (Threshold Sensitivity): Monotonic improving: 1, Monotonic worsening: 1, Non-monotonic: 9, Flat: 1
+2026-02-12 10:06:36.087 | INFO     | __main__:main:1144 - Metric 3 (Oblique Activation): r=-0.2911, p=0.076059
+2026-02-12 10:06:36.088 | INFO     | __main__:main:1145 -   Datasets with zero oblique splits (SG-FIGS-25): 4/12. Mean accuracy: zero-oblique=0.7419, nonzero-oblique=0.6915. Pearson r=-0.2911 (p=0.0761)
+2026-02-12 10:06:36.088 | INFO     | __main__:main:1146 - Metric 4 (Sparse Correction): Found 4 datasets with zero oblique splits for SG-FIGS-25. 4 dataset(s) show discrepancy from FIGS despite zero oblique splits: ['australian', 'banknote', 'glass', 'segment']. This indicates potential implementation artifacts (e.g., Ridge preprocessing side effects).
+2026-02-12 10:06:36.088 | INFO     | __main__:main:1147 - Metric 5 (Stability-Performance): rho=-0.035, p=0.911904
+2026-02-12 10:06:36.088 | INFO     | __main__:main:1148 -   No significant relationship between graph stability and accuracy gap
+2026-02-12 10:06:36.088 | INFO     | __main__:main:1149 - Total examples in output: 84
+2026-02-12 10:06:36.088 | INFO     | __main__:main:1150 - Done!

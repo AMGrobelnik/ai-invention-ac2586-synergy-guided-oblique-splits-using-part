@@ -1,0 +1,4 @@
+{
+  "title": "Sklearn Tabular",
+  "summary": "Two sklearn built-in tabular classification datasets: Breast Cancer Wisconsin (569 samples, 30 numeric features, binary classification: malignant/benign) and Wine (178 samples, 13 numeric features, 3-class classification). Both have no missing values, meaningful feature names for interpretability, standardized values (StandardScaler), discretized versions (5-bin and 10-bin quantile KBinsDiscretizer), and 5-fold StratifiedKFold indices (random_state=42). Each row is a separate example with input as JSON feature dict and output as class label string. Total: 747 examples across 2 datasets."
+}

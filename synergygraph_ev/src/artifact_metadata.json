@@ -1,0 +1,4 @@
+{
+  "title": "SynergyGraph Eval",
+  "summary": "Evaluates whether synergy graph structural properties explain SG-FIGS accuracy gaps across 12 datasets. Computes 5 core metrics: (1) Graph density vs accuracy gap Spearman correlation (rho=-0.08, p=0.81 \u2014 no significant correlation), (2) Threshold sensitivity profiles (9/12 datasets non-monotonic), (3) Oblique activation rate vs accuracy (4 datasets with zero oblique splits), (4) Sparse graph correction counterfactual (all 4 zero-oblique datasets show discrepancy from FIGS \u2014 potential implementation artifact), (5) Stability-performance relationship (rho=-0.04, p=0.91). Additional metrics include AUC gap analysis, edge count progression, and max_rules sensitivity. 84 total evaluation examples across 12 datasets, schema-validated."
+}

@@ -1,0 +1,4 @@
+{
+  "title": "Bootstrap+Taxon",
+  "summary": "Evaluation implementing 6 modules: (A) Bootstrap 95% CIs on 6 pairwise method accuracy differences across 12 datasets (10K resamples, all CIs exclude zero), (B) Failure taxonomy classifying each dataset into 5 failure modes (4 graph_too_sparse, 3 oblique_incompatible, 3 synergy_harmful, 2 synergy_neutral), (C) Split catalog of 9 oblique splits with domain annotations for diabetes/heart/breast_cancer, (D) Synergy alignment via Spearman \u03c1 between |weight| and mean synergy (mean \u03c1=-0.14, mixed), (E) Success criteria verdicts (accuracy parity DISCONFIRMED, interpretability PARTIALLY_CONFIRMED, domain-meaningful splits CONFIRMED), (F) Paper narrative synthesis with 7 ranked findings and 3 lessons learned. Schema-validated against exp_eval_sol_out. 46 examples across 6 evaluation datasets."
+}

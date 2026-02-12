@@ -1,0 +1,89 @@
+2026-02-12 09:51:30.572 | INFO     | __main__:main:1002 - ============================================================
+2026-02-12 09:51:30.572 | INFO     | __main__:main:1003 - SG-FIGS Comprehensive Statistical Evaluation
+2026-02-12 09:51:30.572 | INFO     | __main__:main:1004 - ============================================================
+2026-02-12 09:51:30.572 | INFO     | __main__:_load_json:91 - Loading full_method_out.json from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_4/gen_art/exp_id1_it4__opus
+2026-02-12 09:51:30.584 | INFO     | __main__:_load_json:91 - Loading full_method_out.json from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus
+2026-02-12 09:51:30.637 | INFO     | __main__:_load_json:91 - Loading analysis_metadata.json from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_4/gen_art/exp_id1_it4__opus
+2026-02-12 09:51:30.637 | INFO     | __main__:main:1016 - Datasets (12): ['banknote', 'wine', 'glass', 'diabetes', 'heart_statlog', 'sonar', 'breast_cancer', 'ionosphere', 'vehicle', 'segment', 'credit_g', 'australian']
+2026-02-12 09:51:30.637 | INFO     | __main__:main:1017 - Methods: ['FIGS', 'RO-FIGS', 'SG-FIGS-10', 'SG-FIGS-25', 'SG-FIGS-50', 'GradientBoosting']
+2026-02-12 09:51:30.637 | INFO     | __main__:block1_per_dataset_accuracy:266 - Block 1: Per-dataset accuracy/AUC tables
+2026-02-12 09:51:30.646 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   banknote: FIGS=0.9606, SG-FIGS-25=0.8083
+2026-02-12 09:51:30.655 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   wine: FIGS=0.8595, SG-FIGS-25=0.8654
+2026-02-12 09:51:30.663 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   glass: FIGS=0.6917, SG-FIGS-25=0.5145
+2026-02-12 09:51:30.671 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   diabetes: FIGS=0.7187, SG-FIGS-25=0.6874
+2026-02-12 09:51:30.678 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   heart_statlog: FIGS=0.7667, SG-FIGS-25=0.6259
+2026-02-12 09:51:30.685 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   sonar: FIGS=0.7448, SG-FIGS-25=0.5870
+2026-02-12 09:51:30.693 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   breast_cancer: FIGS=0.9227, SG-FIGS-25=0.9052
+2026-02-12 09:51:30.700 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   ionosphere: FIGS=0.8889, SG-FIGS-25=0.7493
+2026-02-12 09:51:30.708 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   vehicle: FIGS=0.6773, SG-FIGS-25=0.4562
+2026-02-12 09:51:30.715 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   segment: FIGS=0.9294, SG-FIGS-25=0.8143
+2026-02-12 09:51:30.722 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   credit_g: FIGS=0.7290, SG-FIGS-25=0.6560
+2026-02-12 09:51:30.730 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   australian: FIGS=0.8507, SG-FIGS-25=0.8304
+2026-02-12 09:51:30.730 | INFO     | __main__:block2_critical_difference:338 - Block 2: Critical difference diagram data
+2026-02-12 09:51:30.735 | INFO     | __main__:block2_critical_difference:394 -   Friedman chi²=34.79, p=1.66e-06, CD=2.176
+2026-02-12 09:51:30.735 | INFO     | __main__:block3_meta_analysis:410 - Block 3: Dataset meta-analysis correlations
+2026-02-12 09:51:30.739 | INFO     | __main__:block3_meta_analysis:473 -   SG-FIGS-25 advantage range: [-0.1871, 0.0464]
+2026-02-12 09:51:30.739 | INFO     | __main__:block4_oblique_activation:487 - Block 4: Oblique split activation analysis
+2026-02-12 09:51:30.742 | INFO     | __main__:block5_complexity_curves:549 - Block 5: Accuracy-at-matched-complexity curves
+2026-02-12 09:51:30.744 | ERROR    | __main__:<module>:1080 - An error has been caught in function '<module>', process 'MainProcess' (682541), thread 'MainThread' (125261551265600):
+Traceback (most recent call last):
+
+> File "/home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_5/gen_art/eval_id1_it5__opus/eval.py", line 1080, in <module>
+    main()
+    └ <function main at 0x71ec94840d30>
+
+  File "/home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_5/gen_art/eval_id1_it5__opus/eval.py", line 1030, in main
+    block5 = block5_complexity_curves(data=data, datasets=datasets)
+             │                             │              └ ['banknote', 'wine', 'glass', 'diabetes', 'heart_statlog', 'sonar', 'breast_cancer', 'ionosphere', 'vehicle', 'segment', 'cre...
+             │                             └ {'banknote': {'FIGS': {5: {0: {'accuracy': 0.9345454545454546, 'auc': 0.9632486874531234, 'n_splits': 5, 'n_oblique': 0, 'obl...
+             └ <function block5_complexity_curves at 0x71ec948409d0>
+
+  File "/home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_5/gen_art/eval_id1_it5__opus/eval.py", line 605, in block5_complexity_curves
+    sign_test_p = float(stats.binom_test(sg25_lower_count, n_sign, 0.5))
+                        │                │                 └ 9
+                        │                └ 5
+                        └ <module 'scipy.stats' from '/home/adrian/projects/ai-inventor/.venv/lib/python3.10/site-packages/scipy/stats/__init__.py'>
+
+AttributeError: module 'scipy.stats' has no attribute 'binom_test'. Did you mean: 'binomtest'?
+2026-02-12 09:51:38.027 | INFO     | __main__:main:1002 - ============================================================
+2026-02-12 09:51:38.027 | INFO     | __main__:main:1003 - SG-FIGS Comprehensive Statistical Evaluation
+2026-02-12 09:51:38.027 | INFO     | __main__:main:1004 - ============================================================
+2026-02-12 09:51:38.027 | INFO     | __main__:_load_json:91 - Loading full_method_out.json from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_4/gen_art/exp_id1_it4__opus
+2026-02-12 09:51:38.038 | INFO     | __main__:_load_json:91 - Loading full_method_out.json from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_2/gen_art/exp_id1_it2__opus
+2026-02-12 09:51:38.090 | INFO     | __main__:_load_json:91 - Loading analysis_metadata.json from /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_4/gen_art/exp_id1_it4__opus
+2026-02-12 09:51:38.090 | INFO     | __main__:main:1016 - Datasets (12): ['banknote', 'wine', 'glass', 'diabetes', 'heart_statlog', 'sonar', 'breast_cancer', 'ionosphere', 'vehicle', 'segment', 'credit_g', 'australian']
+2026-02-12 09:51:38.090 | INFO     | __main__:main:1017 - Methods: ['FIGS', 'RO-FIGS', 'SG-FIGS-10', 'SG-FIGS-25', 'SG-FIGS-50', 'GradientBoosting']
+2026-02-12 09:51:38.091 | INFO     | __main__:block1_per_dataset_accuracy:266 - Block 1: Per-dataset accuracy/AUC tables
+2026-02-12 09:51:38.099 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   banknote: FIGS=0.9606, SG-FIGS-25=0.8083
+2026-02-12 09:51:38.107 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   wine: FIGS=0.8595, SG-FIGS-25=0.8654
+2026-02-12 09:51:38.115 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   glass: FIGS=0.6917, SG-FIGS-25=0.5145
+2026-02-12 09:51:38.124 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   diabetes: FIGS=0.7187, SG-FIGS-25=0.6874
+2026-02-12 09:51:38.132 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   heart_statlog: FIGS=0.7667, SG-FIGS-25=0.6259
+2026-02-12 09:51:38.140 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   sonar: FIGS=0.7448, SG-FIGS-25=0.5870
+2026-02-12 09:51:38.149 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   breast_cancer: FIGS=0.9227, SG-FIGS-25=0.9052
+2026-02-12 09:51:38.159 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   ionosphere: FIGS=0.8889, SG-FIGS-25=0.7493
+2026-02-12 09:51:38.168 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   vehicle: FIGS=0.6773, SG-FIGS-25=0.4562
+2026-02-12 09:51:38.176 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   segment: FIGS=0.9294, SG-FIGS-25=0.8143
+2026-02-12 09:51:38.184 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   credit_g: FIGS=0.7290, SG-FIGS-25=0.6560
+2026-02-12 09:51:38.192 | DEBUG    | __main__:block1_per_dataset_accuracy:323 -   australian: FIGS=0.8507, SG-FIGS-25=0.8304
+2026-02-12 09:51:38.192 | INFO     | __main__:block2_critical_difference:338 - Block 2: Critical difference diagram data
+2026-02-12 09:51:38.197 | INFO     | __main__:block2_critical_difference:394 -   Friedman chi²=34.79, p=1.66e-06, CD=2.176
+2026-02-12 09:51:38.197 | INFO     | __main__:block3_meta_analysis:410 - Block 3: Dataset meta-analysis correlations
+2026-02-12 09:51:38.201 | INFO     | __main__:block3_meta_analysis:473 -   SG-FIGS-25 advantage range: [-0.1871, 0.0464]
+2026-02-12 09:51:38.201 | INFO     | __main__:block4_oblique_activation:487 - Block 4: Oblique split activation analysis
+2026-02-12 09:51:38.204 | INFO     | __main__:block5_complexity_curves:549 - Block 5: Accuracy-at-matched-complexity curves
+2026-02-12 09:51:38.215 | INFO     | __main__:block6_ablation_decomposition:628 - Block 6: Ablation decomposition
+2026-02-12 09:51:38.216 | INFO     | __main__:block7_case_studies:696 - Block 7: Positive case studies
+2026-02-12 09:51:38.218 | INFO     | __main__:build_output:838 - Building output in schema format
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1059 - Saved output to /home/adrian/projects/ai-inventor/aii_pipeline/runs/run__20260212_072136/3_invention_loop/iter_5/gen_art/eval_id1_it5__opus/eval_out.json
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1064 - Output: 12 datasets, 360 examples
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1065 - Friedman p = 1.66e-06
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1066 - Nemenyi CD = 2.176
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1069 - --- Key Findings ---
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1074 -   FIGS: mean_rank=2.50, grand_mean_acc=0.8117
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1074 -   RO-FIGS: mean_rank=3.92, grand_mean_acc=0.7550
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1074 -   SG-FIGS-10: mean_rank=4.29, grand_mean_acc=0.7215
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1074 -   SG-FIGS-25: mean_rank=4.75, grand_mean_acc=0.7083
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1074 -   SG-FIGS-50: mean_rank=4.46, grand_mean_acc=0.6869
+2026-02-12 09:51:38.280 | INFO     | __main__:main:1074 -   GradientBoosting: mean_rank=1.08, grand_mean_acc=0.8583
+2026-02-12 09:51:38.280 | SUCCESS  | __main__:main:1076 - Evaluation complete!

@@ -1,0 +1,4 @@
+{
+  "title": "PID Synergy Graph",
+  "summary": "Computed pairwise PID synergy scores (Williams-Beer I_min) for all feature pairs across 12 tabular classification datasets (3,597 total pairs) using manual MI-based PID implementation. Constructed synergy graphs at 3 threshold levels (top-10%, top-25%, above-median) with NetworkX graph analysis (cliques, components, clustering coefficient). Includes baseline comparison using interaction information (I(Fi,Fj;Y) - I(Fi;Y) - I(Fj;Y)), discretization stability analysis (5-bin vs 10-bin with Spearman/Jaccard metrics), and domain-meaningful interaction checks for diabetes, breast cancer, and heart datasets. Full pipeline runs in ~17 seconds across all datasets including sonar (1770 pairs). Output validated against exp_gen_sol_out schema."
+}
