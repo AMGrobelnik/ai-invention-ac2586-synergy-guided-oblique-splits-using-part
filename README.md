@@ -2,6 +2,11 @@
 
 This repository contains artifacts from an AI-generated research project.
 
+## Research Paper
+
+[![Download PDF](https://img.shields.io/badge/Download-PDF-red)](https://github.com/AMGrobelnik/ai-invention-ac2586-synergy-guided-oblique-splits-using-part/blob/main/paper.pdf) [![LaTeX Source](https://img.shields.io/badge/LaTeX-Source-orange)](https://github.com/AMGrobelnik/ai-invention-ac2586-synergy-guided-oblique-splits-using-part/tree/main/paper)
+
+
 ## Quick Start - Interactive Demos
 
 Click the badges below to open notebooks directly in Google Colab:
